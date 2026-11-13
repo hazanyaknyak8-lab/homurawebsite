@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy · Homura</title>
+<meta name="description" content="Privacy Policy for the Homura Discord bot.">
+<style>:root{--bg:#07050d;--card:#100b1e;--text:#ede9fb;--muted:#b4acd0;--accent:#b79cff;--line:#2c2050;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+main{max-width:780px;margin:0 auto;padding:40px 20px 80px}a{color:var(--accent)}
+.back{display:inline-block;margin-bottom:24px;text-decoration:none}
+h1{font-size:2rem;margin:0 0 6px}.meta{color:var(--muted);margin:0 0 28px}
+.lg-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 22px;margin:0 0 14px}
+h3{font-size:1.05rem;margin:0 0 6px;color:var(--accent)}p{margin:8px 0}ul{margin:8px 0;padding-left:22px}li{margin:4px 0}
+code{background:#1a1230;padding:1px 6px;border-radius:6px}footer{color:var(--muted);font-size:.9rem;margin-top:30px}</style>
+</head>
+<body>
+<main>
+<a class="back" href="/">← Back to Homura</a>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: November 14, 2026</p>
+<div class="lg-item"><h3>1. Who we are</h3><p>Homura (“the bot”, “we”, “us”) is a Discord bot for server security, moderation, and community management, run by an independent developer. This policy explains what data the bot handles, why, and what choices you have. By adding or using Homura you agree to this policy.</p></div>
+<div class="lg-item"><h3>2. Data we handle</h3><p>Homura only handles data needed to run the features a server turns on:</p><ul><li><b>Identifiers:</b> user IDs, server IDs, channel IDs, role IDs, usernames, and avatars shown by commands.</li><li><b>Server settings:</b> prefixes, enabled features, log channels, whitelists, welcome and autorole settings, autoresponders, and similar configuration.</li><li><b>Moderation data:</b> warnings, cases, mutes, jail status, and the reasons moderators enter.</li><li><b>Activity counts:</b> XP and levels, message counts, and invite tracking. These are counts, not message text.</li><li><b>Join information:</b> user ID, username, account age, and join time, used for verification, anti-raid, and anti-nuke checks.</li><li><b>Backups:</b> when a premium server runs <code>backup</code>, we save its roles, channels, and settings structure so it can be rebuilt.</li><li><b>Feature data:</b> tickets, giveaways, reaction roles, sticky messages, playlists, and any account you choose to link, such as Last.fm or Spotify.</li></ul></div>
+<div class="lg-item"><h3>3. Message content and LinkScan</h3><p>Homura uses Discord’s Message Content intent to read messages in servers where moderation and security features are enabled. Messages are read to run automod, LinkScan, anti-raid and honeypot detection, autoresponders, leveling, and prefix commands. Message text is processed to perform these checks and is not kept, except where a feature you enable needs it, such as an autoresponder trigger or a moderation log entry posted to that server’s log channel.</p><p>LinkScan extracts links from messages and checks them against Google Safe Browsing and VirusTotal. Only the URL is sent to these services. We do not send the full message or the author’s identity. If a link is malicious, the message is deleted, the sender may be timed out, and the action is logged for the server’s staff.</p></div>
+<div class="lg-item"><h3>4. How we use data</h3><p>We use data only to provide and secure the features above, to prevent abuse, and to fix bugs. We do not sell data, we do not use it for advertising or profiling, and we do not use it to train AI models.</p></div>
+<div class="lg-item"><h3>5. Third parties</h3><p>Data is shared only with the services needed to run the bot: Discord (the platform the bot runs on), Google Safe Browsing and VirusTotal (URLs only, for LinkScan), our hosting provider, and Last.fm or Spotify if a user chooses to link those accounts. This website also loads the developer’s public Discord profile through Lanyard, and stores a display preference in your browser’s local storage. We do not share data with anyone else except when required by law.</p></div>
+<div class="lg-item"><h3>6. Retention and deletion</h3><p>Server data is kept while Homura is in the server. When the bot is removed from a server, that server’s data is deleted within 30 days. Cached link scan results are kept for a short time to avoid repeated lookups. Server owners and users can ask us to delete their data at any time through the contact options below.</p></div>
+<div class="lg-item"><h3>7. Security</h3><p>Data is stored on private infrastructure with access limited to the developer. No system is perfectly secure, but we take reasonable steps to protect the data we hold.</p></div>
+<div class="lg-item"><h3>8. Children</h3><p>Homura is intended for Discord users, who must meet Discord’s minimum age requirement. We do not knowingly collect data from anyone below that age.</p></div>
+<div class="lg-item"><h3>9. Changes</h3><p>We may update this policy. The date above shows when it last changed. Continued use of the bot after a change means you accept the updated policy.</p></div>
+<div class="lg-item"><h3>10. Contact</h3><p>Join the <a href="https://discord.gg/YeVRt4JtH3" target="_blank" rel="noopener">support server</a> or message the developer on Discord (user ID 1530686788824469646).</p></div>
+<footer>See also: <a href="/terms.html">Terms of Service</a> · Homura is not affiliated with or endorsed by Discord Inc.</footer>
+</main>
+</body>
+</html>
