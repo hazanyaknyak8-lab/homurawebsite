@@ -681,6 +681,7 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
 .powered:hover{transform:translateY(-3px);color:#fff;border-color:var(--accent-2);box-shadow:0 18px 40px -14px rgba(192,38,211,.9)}
 .foot-in{justify-content:space-between}.foot-in .powered{flex:0 0 auto;margin-left:auto;margin-right:auto}
 @media (max-width:640px){.sm-row{grid-template-columns:62px minmax(0,1fr) 40px}.tap{padding:15px 28px}}
+
 </style>
 <noscript><style>#gate{display:none!important}</style></noscript>
 <style>
@@ -724,22 +725,6 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
   </symbol>
 </svg>
 
-<!-- Loading gate -->
-<div id="gate" role="dialog" aria-modal="true" aria-label="Loading Homura">
-  <div class="g-bg" aria-hidden="true"></div><div class="g-vig" aria-hidden="true"></div><canvas id="gFx" aria-hidden="true"></canvas><canvas id="gPetals" aria-hidden="true"></canvas><div class="g-scan" aria-hidden="true"></div><i class="g-cn a"></i><i class="g-cn b"></i><i class="g-cn c"></i><i class="g-cn d"></i>
-  <div class="gate-in">
-    <div class="g-avatar" aria-hidden="true">
-      <svg viewBox="0 0 200 200"><defs><linearGradient id="gg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#f0abfc"/></linearGradient></defs>
-        <circle class="g-base" cx="100" cy="100" r="94"/><circle class="g-tick" cx="100" cy="100" r="98"/><circle class="g-prog" id="gProg" cx="100" cy="100" r="88"/></svg>
-      <div class="av"></div><span class="g-pct" id="gPct">0%</span>
-    </div>
-    <p class="gate-title" data-t="Homura">Homura</p>
-    <p class="gate-sub" id="gMsg" aria-live="polite">Loading</p>
-    <div class="bar" aria-hidden="true"><i id="gBar"></i></div>
-    <button class="tap" id="gTap" type="button"><span>Enter Homura</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-    <p class="hint">Tap anywhere or press Enter</p>
-  </div>
-</div>
 
 <!-- Nav -->
 <div class="sp" id="sp" aria-hidden="true"></div>
@@ -913,21 +898,23 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Lifetime Premium, pay once</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Lifetime <b>No-prefix</b> included</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Better security: 99% instead of 50%</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>24/7 music with <code>247</code></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>LinkScan, automatic phishing and malware link protection</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Antiraid, stops floods of new accounts</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Full music player, with 24/7 music using <code>247</code></li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Server <code>backup</code> and music with <code>karaoke</code></li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Custom Bot: make Homura your own</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Custom Bot: your own name, avatar, banner and bio in your server</li>
           </ul>
           <a class="btn" href="https://discord.com/users/1530686788824469646" target="_blank" rel="noopener">DM me to buy Lifetime</a>
           <p class="pfine">Buying is done in Discord DMs. Nothing is charged on this website.</p>
         </article>
         <article class="pcard mini">
-          <div class="mrow"><div><p class="label">Short term</p><h3>1 Month</h3></div><span class="mprice">Ask in DM</span></div>
-          <p>Same Premium features and No-prefix, for one month. Renew whenever you like.</p>
-          <a class="btn ghost" href="https://discord.com/users/1530686788824469646" target="_blank" rel="noopener">DM me for the price</a>
+          <div class="mrow"><div><p class="label">Short term</p><h3>1 Month</h3></div><span class="mprice">₱99</span></div>
+          <p>Same Premium features and No-prefix, for one month. Renew whenever you like. Staying long? Lifetime at ₱499 pays for itself in about five months.</p>
+          <a class="btn ghost" href="https://discord.com/users/1530686788824469646" target="_blank" rel="noopener">DM me to buy 1 Month</a>
         </article>
       </div>
       <div class="pside">
-        <div class="pfeat"><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Better security</h3><p>Free servers get 50% protection. Premium jumps to 99%, so raiders and nukers have a much harder time getting through.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><h3>24/7 music</h3><p>Run <code>247</code> and Homura stays in your voice channel all day, even when it is empty. Free servers cannot use it.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span><h3>Karaoke music</h3><p>Turn on <code>karaoke</code> to cut down the vocals and sing along. Regular music stays free, karaoke is Premium.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span><h3>Server backup</h3><p>Save your roles, channels and settings with <code>backup</code> and rebuild after an attack. Without Premium you cannot make backups.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/><path d="M18 3v4M16 5h4"/></svg></span><h3>Custom Bot</h3><p>Make Homura your own. Customize the bot for your server, only on Premium.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6l6 6-6 6"/><path d="M13 18h7"/></svg></span><h3>No-prefix</h3><p>Type <code>ping</code> instead of <code>.ping</code>. Free with every plan, and it lasts as long as your plan.</p></div></div>
+        <div class="pfeat"><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Better security</h3><p>Free servers get 50% protection. Premium jumps to 99%, so raiders and nukers have a much harder time getting through.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><h3>24/7 music</h3><p>Run <code>247</code> and Homura stays in your voice channel all day, even when it is empty. Free servers cannot use it.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span><h3>Karaoke music</h3><p>Turn on <code>karaoke</code> to cut down the vocals and sing along. All music is Premium, and karaoke is included.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span><h3>Server backup</h3><p>Save your roles, channels and settings with <code>backup</code> and rebuild after an attack. Without Premium you cannot make backups.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/><path d="M18 3v4M16 5h4"/></svg></span><h3>Custom Bot</h3><p>Change Homura’s name, avatar, banner and bio inside your own server. It only changes in your server, not anywhere else, and only on Premium.</p></div><div class="pf"><span class="ficon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6l6 6-6 6"/><path d="M13 18h7"/></svg></span><h3>No-prefix</h3><p>Type <code>ping</code> instead of <code>.ping</code>. Free with every plan, and it lasts as long as your plan.</p></div></div>
         <div class="smeter">
           <h4>Security strength</h4>
           <div class="sm-row"><span>Free</span><div class="sm-bar"><i style="--w:50%"></i></div><b>50%</b></div>
@@ -942,12 +929,15 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
         <div class="tbl pcmp"><table>
           <thead><tr><th>What you get</th><th>Free</th><th>Premium</th></tr></thead>
           <tbody>
-            <tr><td>Antinuke, antiraid, automod</td><td class="y">✓ Yes</td><td class="y">✓ Yes</td></tr>
+            <tr><td>Antinuke and automod</td><td class="y">✓ Yes</td><td class="y">✓ Yes</td></tr>
+            <tr><td>Antiraid</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
             <tr><td>Better security</td><td class="h">50%</td><td class="y">99%</td></tr>
+            <tr><td>LinkScan (malicious link scanner)</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
             <tr><td>Server backup</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
+            <tr><td>Music player (<code>play</code>, queue, playlists)</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
             <tr><td>24/7 music (<code>247</code>)</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
             <tr><td>Music with karaoke</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
-            <tr><td>Custom Bot</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
+            <tr><td>Custom Bot (name, avatar, banner, bio)</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
             <tr><td>No-prefix commands</td><td class="n">✕ No</td><td class="y">✓ Yes</td></tr>
           </tbody>
         </table></div>
@@ -1014,7 +1004,7 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
             <li><div><strong>Turn on antinuke (owner only)</strong>Run <code class="cmd">antinuke setup</code>, or <code class="cmd">antinuke wizard</code> if you want to be guided step by step. This protects you if someone with permissions starts deleting channels or banning members.</div></li>
             <li><div><strong>Whitelist people you trust</strong>Run <code class="cmd">whitelist @user</code> for your head admins and trusted bots so security never blocks them.</div></li>
             <li><div><strong>Set up logs</strong>Run <code class="cmd">log setup</code> so joins, edits, deletes and role changes are recorded. Also pick an alert channel with <code class="cmd">antinuke logchannel</code>.</div></li>
-            <li><div><strong>Turn on antiraid (owner only)</strong>Run <code class="cmd">antiraid setup</code>. It watches for many accounts joining at once and can lock the server for you.</div></li>
+            <li><div><strong>Turn on antiraid (owner only, Premium)</strong>Antiraid needs Premium. Run <code class="cmd">antiraid setup</code>. It watches for many accounts joining at once and can lock the server for you.</div></li>
             <li><div><strong>Turn on automod</strong>Run <code class="cmd">automod enable</code>, then <code class="cmd">automod rules</code> to see what it can catch and <code class="cmd">automod manage</code> to choose.</div></li>
             <li><div><strong>Welcome your members</strong>Run <code class="cmd">welcome</code> to see the options and <code class="cmd">welcome variables</code> to see what you can put in the message, like the member’s name.</div></li>
             <li><div><strong>Make a backup (owner only, Premium)</strong>Backups need Premium. Run <code class="cmd">backup create</code>. If anything ever goes wrong, you can rebuild from it.</div></li>
@@ -1026,10 +1016,10 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
           <div class="tbl"><table>
             <thead><tr><th>Level</th><th>Who</th><th>Examples</th></tr></thead>
             <tbody>
-              <tr><td>Everyone</td><td>Any member</td><td><code class="cmd">ping</code> <code class="cmd">avatar</code> <code class="cmd">afk</code> <code class="cmd">play</code> <code class="cmd">levels</code></td></tr>
+              <tr><td>Everyone</td><td>Any member</td><td><code class="cmd">ping</code> <code class="cmd">avatar</code> <code class="cmd">afk</code> <code class="cmd">levels</code> <code class="cmd">help</code></td></tr>
               <tr><td>Moderators</td><td>Members with the matching Discord permission, such as Ban Members or Manage Messages</td><td><code class="cmd">ban</code> <code class="cmd">mute</code> <code class="cmd">warn</code> <code class="cmd">clear</code> <code class="cmd">lock</code></td></tr>
               <tr><td>Server owner</td><td>The server owner and extra owners. Marked with the Server owner tag.</td><td><code class="cmd">antinuke</code> <code class="cmd">whitelist</code> <code class="cmd">backup</code></td></tr>
-              <tr><td>Premium</td><td>Servers or users with premium</td><td><code class="cmd">247</code> <code class="cmd">backup</code> <code class="cmd">karaoke</code></td></tr>
+              <tr><td>Premium</td><td>Servers or users with premium</td><td><code class="cmd">play</code> <code class="cmd">antiraid</code> <code class="cmd">linkscan</code> <code class="cmd">247</code> <code class="cmd">backup</code> <code class="cmd">karaoke</code></td></tr>
             </tbody>
           </table></div>
           <div class="note"><b>Extra owners.</b> Want a co-owner to manage security without giving them ownership of the server? Add them with <code class="slash">/extra-owner add</code>. Choose carefully, because extra owners can change security settings.</div>
@@ -1042,8 +1032,9 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
             <thead><tr><th>System</th><th>Stops</th><th>Reacts to</th><th>Start with</th></tr></thead>
             <tbody>
               <tr><td>Antinuke</td><td>Mass bans, deleted channels and roles, permission abuse</td><td>A person with permissions acting too fast</td><td><code class="cmd">antinuke setup</code></td></tr>
-              <tr><td>Antiraid</td><td>Floods of new accounts and join spam</td><td>Many joins in a short time</td><td><code class="cmd">antiraid setup</code></td></tr>
-              <tr><td>Automod</td><td>Spam, invite links, bad words, mass mentions</td><td>Messages</td><td><code class="cmd">automod enable</code></td></tr>
+              <tr><td>Antiraid (Premium)</td><td>Floods of new accounts and join spam</td><td>Many joins in a short time</td><td><code class="cmd">antiraid setup</code></td></tr>
+              <tr><td>Automod</td><td>Spam, invite links, bad words, mass mentions. Also sets up Discord’s own AutoMod rules</td><td>Messages</td><td><code class="cmd">automod enable</code></td></tr>
+              <tr><td>LinkScan</td><td>Phishing sites, malware links, token-grabbing images</td><td>Links, images and GIFs in messages</td><td><code class="cmd">linkscan setup</code></td></tr>
               <tr><td>Honeypot</td><td>Spam bots</td><td>Anyone who posts in the trap channel</td><td><code class="cmd">honeypot setup</code></td></tr>
               <tr><td>Verify</td><td>Unchecked accounts getting in</td><td>New members</td><td><code class="cmd">verify post</code></td></tr>
               <tr><td>Backup</td><td>Lost work after an attack</td><td>You, on demand</td><td><code class="cmd">backup create</code></td></tr>
@@ -1089,7 +1080,7 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
           <h4>Giveaways</h4>
           <p>Run <code class="cmd">giveaway gpanel</code> to open the panel, or start one directly with <code class="cmd">giveaway gstart</code>. End early with <code class="cmd">giveaway gend</code> and pick a new winner with <code class="cmd">giveaway greroll</code>.</p>
           <h4>Music</h4>
-          <p>Join a voice channel first, then run <code class="cmd">play song name</code>. Control it with <code class="cmd">pause</code>, <code class="cmd">resume</code>, <code class="cmd">skip</code>, <code class="cmd">queue</code>, <code class="cmd">loop</code> and <code class="cmd">volume 80</code>. Save your favorites with <code class="cmd">playlist save</code>. Premium servers can keep Homura in the channel all day with <code class="cmd">247</code> and use <code class="cmd">karaoke</code>. You can also link <code class="cmd">fm</code> (Last.fm) and <code class="cmd">spotify</code> to see and play your own listening.</p>
+          <p>Music is a Premium feature. Join a voice channel first, then run <code class="cmd">play song name</code>. Control it with <code class="cmd">pause</code>, <code class="cmd">resume</code>, <code class="cmd">skip</code>, <code class="cmd">queue</code>, <code class="cmd">loop</code> and <code class="cmd">volume 80</code>. Save your favorites with <code class="cmd">playlist save</code>. You can keep Homura in the channel all day with <code class="cmd">247</code> and use <code class="cmd">karaoke</code>. You can also link <code class="cmd">fm</code> (Last.fm) and <code class="cmd">spotify</code> to see and play your own listening.</p>
         </section>
 
         <section id="d-help">
@@ -1098,6 +1089,7 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
             <details><summary>Homura does not answer my commands</summary><p>Try <code class="slash">/ping</code>. If the slash command works but the prefix does not, the prefix was changed (run <code class="cmd">prefix</code> to check) or the channel is ignored (run <code class="cmd">ignorelist</code>). Also make sure Homura can see and send messages in that channel.</p></details>
             <details><summary>I get a missing permissions error</summary><p>Almost always the role order. Drag Homura’s role above the roles it needs to manage, and make sure it has the Discord permission for the action, like Ban Members.</p></details>
             <details><summary>Slash commands do not show up</summary><p>Reinvite Homura with the slash commands option enabled, then refresh Discord with Ctrl + R on desktop or restart the app on mobile. New commands can take a few minutes to appear.</p></details>
+            <details><summary>Why does Homura ask for the Administrator permission?</summary><p>Homura is an all in one security bot. Antinuke has to undo mass bans, restore deleted channels and roles, and remove dangerous permissions. Antiraid has to lock channels and kick or ban in bulk, and backup has to rebuild your whole server. These need access to everything, and giving each permission one by one often leaves gaps that attackers can use. Homura only uses the permissions a feature needs when you turn that feature on, and you can see what it did in your logs. For safety, keep Homura’s role below your owner and head admins, and only give the extra owner role to people you trust.</p></details>
             <details><summary>I cannot use a command tagged Server owner</summary><p>Only the server owner and extra owners can run those. If you are a co-owner, ask the server owner to add you with <code class="slash">/extra-owner add</code>.</p></details>
             <details><summary>Music does not play</summary><p>Join a voice channel first, and check that Homura has Connect and Speak permission there. If it still stays silent, run <code class="cmd">join</code>, then <code class="cmd">play</code> again.</p></details>
             <details><summary>How do I get premium or no prefix?</summary><p>Run <code class="cmd">premium</code> to see what is included and how to get it, and <code class="cmd">np help</code> for no prefix. Prices and how to buy are in the <a href="#premium">Premium section</a>. For anything else, ask in the support server.</p></details>
@@ -1175,6 +1167,8 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
       <a href="#docs">Docs</a>
       <a href="#developer">Developer</a>
       <a href="https://discord.gg/YeVRt4JtH3" target="_blank" rel="noopener">Support server</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
     </nav>
     <div class="legal">
       <span>© 2026 Homura Bot · <a href="https://dk-portfolioo.vercel.app/" target="_blank" rel="noopener">Developer portfolio</a></span>
@@ -1212,7 +1206,7 @@ const pad=n=>String(n).padStart(2,"0");
    Each entry: [name, aliases, what it does, example, subcommands ("name|what it does|so"), tags] */
 const CATS=[
  {id:"mod",name:"Moderation",icon:"ban",blurb:"Remove trouble-makers, quiet noisy channels, track warnings and clean up messages. Everything a moderator does day to day.",eg:["ban","mute","warn","clear"]},
- {id:"sec",name:"Security",icon:"shield",blurb:"Stops raids, nukes and spam before they spread. Antinuke, antiraid, automod, honeypot and backups work together.",eg:["antinuke","antiraid","automod","backup"]},
+ {id:"sec",name:"Security",icon:"shield",blurb:"Stops raids, nukes and spam before they spread. Antinuke, antiraid, automod, LinkScan, honeypot and backups work together.",eg:["antinuke","antiraid","automod","backup"]},
  {id:"setup",name:"Server setup",icon:"sliders",blurb:"Welcome messages, roles, tickets, sticky messages and more. Set your server up once and let Homura run it.",eg:["welcome","ticket","autorole","sticky"]},
  {id:"engage",name:"Levels, invites and giveaways",icon:"star",blurb:"Keep members active with XP levels, invite tracking, leaderboards and giveaways.",eg:["levels","leaderboard","invites","giveaway"]},
  {id:"music",name:"Music",icon:"note",blurb:"Play music in voice channels with queues, playlists and your Last.fm or Spotify account.",eg:["play","queue","playlist","lyrics"]},
@@ -1274,11 +1268,12 @@ sec:[
  ["antinuke","an, sec","Protects your server from a “nuke”, where someone with permissions quickly bans members or deletes channels and roles. Homura spots it and punishes the person doing it.","antinuke setup",["help|Overview of antinuke commands","modules|See every protection module","panel|Open the control panel","setup|Turn antinuke on with recommended settings","enable|Turn a module on","disable|Turn a module off","status|See what is on and off","filters|Fine tune the limits of each module","wizard|Step by step guided setup","logchannel|Choose where alerts are sent","punishment|Choose what happens to offenders"],"so"],
  ["whitelist","wl","Adds trusted people that Homura’s security should ignore, like your head admins or trusted bots.","whitelist @user",null,"so"],
  ["extraowner","eo","Gives someone owner level access to Homura’s security commands without making them the server owner. Choose carefully.","extraowner add @user",["add|Make someone an extra owner","remove|Take it away","list|See all extra owners"],"so"],
- ["antiraid","","Defends against raids, when many accounts join and spam at once. It can lock your server automatically.","antiraid panel",["panel|Open the control panel","help|Overview of antiraid commands","lockdown|Lock the server","raidmode|Turn on stricter rules for new joins","panic|Emergency mode. Locks everything right now","whitelist list|See who is whitelisted","setup|First time setup|so","enable|Turn antiraid on|so","disable|Turn antiraid off|so","module|Switch a module on or off|so","set|Change a setting|so","action|Choose what happens to raiders|so","autolock|Lock automatically when a raid is detected|so","logs|Choose where logs are sent|so","extapps|Control external apps|so","restore|Restore your server after a raid|so","unlock|End a lockdown|so","unpanic|End panic mode|so","whitelist add|Add someone to the whitelist|so","whitelist remove|Remove someone from the whitelist|so","extraowner add|Add an extra owner|so","extraowner remove|Remove an extra owner|so"],"sopart"],
+ ["antiraid","","Defends against raids, when many accounts join and spam at once. It can lock your server automatically. Premium only.","antiraid panel",["panel|Open the control panel","help|Overview of antiraid commands","lockdown|Lock the server","raidmode|Turn on stricter rules for new joins","panic|Emergency mode. Locks everything right now","whitelist list|See who is whitelisted","setup|First time setup|so","enable|Turn antiraid on|so","disable|Turn antiraid off|so","module|Switch a module on or off|so","set|Change a setting|so","action|Choose what happens to raiders|so","autolock|Lock automatically when a raid is detected|so","logs|Choose where logs are sent|so","extapps|Control external apps|so","restore|Restore your server after a raid|so","unlock|End a lockdown|so","unpanic|End panic mode|so","whitelist add|Add someone to the whitelist|so","whitelist remove|Remove someone from the whitelist|so","extraowner add|Add an extra owner|so","extraowner remove|Remove an extra owner|so"],"sopart,prem"],
  ["j2l","antij2l","Join to leave protection. Catches accounts that join and leave right away, a common raid and spam trick.","j2l"],
  ["honeypot","hp","Sets a trap channel. Real members never post in it, so anyone who does, usually a spam bot, gets punished automatically.","honeypot setup",["setup|Create the trap channel","whitelist|Exempt a user or role","enable|Turn it on","disable|Turn it off","channel|Change the trap channel","logchannel|Choose where catches are logged","action|Choose the punishment","settings|See current settings","reset|Remove all honeypot settings"]],
- ["automod","am","Automatically removes messages that break your rules, like spam, invite links, bad words and mass mentions, then punishes repeat offenders.","automod enable",["help|Overview of automod","enable|Turn automod on","disable|Turn automod off","manage|Choose which rules are active","settings|See your settings","punishments|Choose what happens when someone breaks a rule","rules|List every rule automod can enforce","native|Use Discord’s built in AutoMod","reset|Go back to default settings","logging|Choose where actions are logged","wlrole|Exempt a role","wluser|Exempt a user","wlchannel|Exempt a channel","whitelist show|See everything that is exempt","whitelist role|Exempt a role","whitelist user|Exempt a user","whitelist channel|Exempt a channel","whitelist reset|Clear the exemptions","blacklist add|Block a word or link","blacklist remove|Unblock a word or link","blacklist list|See blocked words and links"]],
+ ["automod","am","Automatically removes messages that break your rules, like spam, invite links, bad words and mass mentions, then punishes repeat offenders. It also creates Discord’s own AutoMod rules for you.","automod enable",["help|Overview of automod","enable|Turn automod on","disable|Turn automod off","manage|Choose which rules are active","settings|See your settings","punishments|Choose what happens when someone breaks a rule","rules|List every rule automod can enforce","native|Use Discord’s built in AutoMod","reset|Go back to default settings","logging|Choose where actions are logged","wlrole|Exempt a role","wluser|Exempt a user","wlchannel|Exempt a channel","whitelist show|See everything that is exempt","whitelist role|Exempt a role","whitelist user|Exempt a user","whitelist channel|Exempt a channel","whitelist reset|Clear the exemptions","blacklist add|Block a word or link","blacklist remove|Unblock a word or link","blacklist list|See blocked words and links"]],
  ["backup","","Saves a copy of your server layout, like roles, channels and settings, so you can rebuild it after a disaster.","backup create",["create|Make a new backup","info|See the details of a backup","export|Export a backup","delete|Delete a backup","restore|Rebuild your server from a backup","access|Control who can use backups"],"so,prem"],
+ ["linkscan","","Automatically checks links, images and GIFs that members send. If one is a phishing or malware link, Homura deletes it, times the sender out for 5 minutes and shows a short warning. Logs go to a private staff channel.","linkscan setup",["setup|One time setup, creates a private log channel","<link>|Scan one link by hand","status|See if it is on and how many links it has checked"],"prem"],
  ["/security-panel","","Opens a panel with Homura’s security status and buttons to change it.","/security-panel",null,"slash"],
  ["/extra-owner","","Slash version of extraowner. Add, remove or list extra owners.","/extra-owner add @user",["add|Make someone an extra owner","remove|Take it away","list|See all extra owners"],"slash,so"],
  ["verify","","Makes new members prove they are real before they can see your server.","verify post",["post|Send the verify message to a channel","force|Verify a member yourself","unverify|Take away someone’s verified status"]],
@@ -1407,6 +1402,7 @@ for(const c of CATS)for(const r of RAW[c.id]){
   COMMANDS.push({cat:c.id,name:r[0],alias:r[1]?r[1].split(",").map(s=>s.trim()):[],desc:r[2],usage:r[3],
     subs:(r[4]||[]).map(x=>{const p=x.split("|");return{n:p[0],d:p[1],so:p[2]==="so"}}),
     tags:(r[5]||"").split(",").filter(Boolean)});
+  if(c.id==="music"){const mc=COMMANDS[COMMANDS.length-1];if(!["music","disconnect","247"].includes(mc.name)&&!mc.tags.includes("prem"))mc.tags.push("prem")}
 }
 const ICONS={
  shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
@@ -1686,32 +1682,6 @@ function sparks(cv,max,dens){
   return()=>{on=false;cancelAnimationFrame(raf)};
 }
 
-/* ===== Loading gate: simulated setup ===== */
-function runGate(){
-  const gate=$("#gate"),bar=$("#gBar"),pc=$("#gPct"),prog=$("#gProg"),msg=$("#gMsg"),tap=$("#gTap"),shell=$$("main,header.nav");
-  const C=553;let done=false,ready=false;
-  const stopFx=document.documentElement.classList.contains("fx-off")?()=>{}:sparks($("#gFx"),window.__lite?12:24,30000);
-  document.documentElement.classList.add("locked");shell.forEach(n=>n.setAttribute("inert",""));
-  const set=p=>{bar.style.width=p+"%";pc.textContent=Math.round(p)+"%";prog.style.strokeDashoffset=C*(1-p/100);const m=p>=100?"Ready":"Loading";if(msg.textContent!==m)msg.textContent=m};
-  const t0=performance.now(),MIN=1500,MAX=3500;
-  let statsDone=false;loadStats().catch(()=>false).then(()=>{statsDone=true});
-  set(0);
-  (function frame(t){
-    const el=t-t0,k=clamp(el/MIN,0,1),e=1-Math.pow(1-k,3);
-    set(Math.min(statsDone||el>=MAX?100:90,e*100));
-    if(el<MIN||(!statsDone&&el<MAX))return requestAnimationFrame(frame);
-    set(100);ready=true;gate.classList.add("ready");tap.focus({preventScroll:true});
-  })(t0);
-  const leave=()=>{
-    if(!ready||done)return;done=true;
-    gate.classList.add("out");shell.forEach(n=>n.removeAttribute("inert"));
-    document.documentElement.classList.remove("locked");document.documentElement.classList.add("entered");
-    setTimeout(()=>{gate.hidden=true;stopFx()},600);
-  };
-  gate.addEventListener("click",leave);
-  document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&ready&&!done){e.preventDefault();leave()}});
-}
-
 /* ===== Owner profile (Discord lookup via Lanyard, falls back to CONFIG) ===== */
 async function loadOwner(){
   const nm=$("#ownName"),us=$("#ownUser"),av=$("#ownAv"),dot=$("#ownDot");
@@ -1790,7 +1760,8 @@ function extra2(){
     b.addEventListener("click",()=>copyText(location.href.split("#")[0]+"#"+h.parentNode.id,b));h.appendChild(b)});
 }
 try{extra2()}catch(e){console.error(e)}
-try{runGate()}catch(e){console.error(e);const g=$("#gate");if(g)g.hidden=true;$$("main,header.nav").forEach(n=>n.removeAttribute("inert"));document.documentElement.classList.remove("locked");document.documentElement.classList.add("entered")}
+try{loadStats().catch(()=>false)}catch(e){console.error(e)}
+$$("main,header.nav").forEach(n=>n.removeAttribute("inert"));document.documentElement.classList.remove("locked");document.documentElement.classList.add("entered");
 })();
 </script>
 <script>
@@ -1815,7 +1786,7 @@ function petals(cv,n){
   return{start(){if(run)return;run=true;last=0;raf=requestAnimationFrame(f)},stop(){run=false;cancelAnimationFrame(raf);c.setTransform(1,0,0,1,0,0);c.clearRect(0,0,W,H)}};
 }
 let main=null,gp=null;
-try{main=petals($("petals"),window.__lite?6:12);gp=petals($("gPetals"),window.__lite?8:14)}catch(e){}
+try{main=petals($("petals"),window.__lite?6:12);gp=null}catch(e){}
 /* purple trail: desktop with a mouse only, smoothed head, runs only while moving */
 const tc=$("trail"),tx=tc.getContext("2d");let tw=0,th=0,pts=[],sps=[],mx=0,my=0,hx=0,hy=0,traf=0,trun=false,seen=false,tOn=false;
 const trs=()=>{tw=tc.width=innerWidth;th=tc.height=innerHeight};trs();addEventListener("resize",trs);
