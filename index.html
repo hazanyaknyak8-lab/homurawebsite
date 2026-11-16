@@ -2122,7 +2122,7 @@ const M=(w,t)=>({k:"m",w,t});
 const ALERT=["Attack","Detected","Punished","Restored"];
 const S={
  antinuke:{label:"Antinuke",ch:"homura-logs",seed:[M("o","yo, anyone down to play?"),M("l","sure, give me a sec"),M("a","hold up, something's wrong")],acts:[
-  ["Delete a channel",[E("#f59e0b","⚠ Unauthorized channel delete",[["Executor","@Nuker Bot"],["Channel","general"],["Action","Banned, restoring"]],ALERT),E("#34d399","✓ Channel restored",[["Result","#general is back where it was. Nobody had to lift a finger."]]),M("a","wait it's already back??"),M("o","that's why antinuke stays on")]],
+  ["Delete a channel",[E("#f59e0b","⚠ Unauthorized channel delete",[["Executor","@Nuker Bot"],["Channel","general"],["Action","Banned, restoring"]],ALERT),E("#34d399","✓ Channel restored",[["Result","#general is back where it was. Nobody had to lift a finger."]]),M("a","wait, you guys saw that too?"),M("o","yep, that's exactly why the protection is enabled")]],
   ["Delete a role",[E("#f59e0b","⚠ Unauthorized role delete",[["Executor","@Spam Bot"],["Role","Moderator"],["Action","Banned, restoring"]],ALERT),E("#34d399","✓ Role restored",[["Result","@Moderator is back with its permissions and members."]])]],
   ["Mass ban",[E("#ef4444","⚠ Mass ban blocked",[["Executor","@Rogue Admin"],["Bans","6 in 4 seconds (limit 3)"],["Action","Permissions removed"]],ALERT),E("#34d399","✓ Bans reverted",[["Result","All 6 members were unbanned. Setup: run <i>antinuke setup</i>."]])]]]},
  antiraid:{label:"Antiraid",ch:"homura-logs",seed:[M("o","quiet night, going afk"),M("a","same")],acts:[
