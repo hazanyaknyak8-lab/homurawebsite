@@ -712,6 +712,90 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
 .g-scan{display:none}
 #gate{transition:opacity .5s var(--ease),visibility .5s}#gate.out{transform:none;filter:none}
 .gate-sub{margin-top:14px}
+
+/* ===== Preview window, alias demo, partners ===== */
+.pv-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.al-demo{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;margin:18px 0 6px}
+.al-box{display:flex;flex-direction:column;gap:6px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.al-box small{font:500 11.5px var(--f-mono);color:var(--dim)}
+.al-box code{border:0;background:none;padding:0;font-size:15px;color:var(--text)}
+.al-box.dim{border-color:var(--line-soft)}.al-box.dim code{color:var(--muted)}
+.al-arrow{align-self:center;font:500 12px var(--f-mono);color:var(--accent-2)}
+.dm{display:grid;grid-template-columns:64px 208px minmax(0,1fr) 190px;height:600px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#0d0a17;box-shadow:0 50px 100px -60px rgba(139,92,246,.9)}
+.dm-bar{grid-column:1/-1;display:flex;align-items:center;gap:7px;height:38px;padding:0 14px;background:#0a0812;border-bottom:1px solid var(--line-soft);font:500 12px var(--f-mono);color:var(--dim)}
+.dm-bar i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.dm-bar i:nth-child(2){background:#febc2e}.dm-bar i:nth-child(3){background:#28c840}.dm-bar span{margin:0 auto}
+.dm-body{grid-column:1/-1;display:grid;grid-template-columns:64px 208px minmax(0,1fr) 190px;min-height:0}
+.dm{grid-template-rows:38px minmax(0,1fr)}
+.dm-rail{display:flex;flex-direction:column;align-items:center;gap:10px;padding:12px 0;background:#08060f}
+.dm-rail img,.dm-rail b{width:44px;height:44px;border-radius:14px;object-fit:cover;display:block}
+.dm-rail b{background:#15102a;border-radius:50%;opacity:.7}
+.dm-side{padding:14px 10px;background:#0f0b1c;overflow:hidden;font-size:13.5px}
+.dm-srv{font:700 14.5px var(--f-body);padding:4px 8px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-bottom:1px solid var(--line-soft);margin-bottom:12px}
+.dm-side h6{font:600 11px var(--f-body);color:var(--dim);margin:12px 8px 4px;letter-spacing:.04em}
+.dm-ch{display:flex;gap:6px;padding:5px 8px;border-radius:7px;color:var(--dim)}.dm-ch.on{background:#1c1533;color:#fff}.dm-ch::before{content:"#";opacity:.7}
+.dm-roles{display:flex;flex-wrap:wrap;gap:6px;padding:0 8px}.dm-roles span{font-size:11.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.dm-main{display:flex;flex-direction:column;min-width:0;min-height:0;border-inline:1px solid var(--line-soft)}
+.dm-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:10px 14px;border-bottom:1px solid var(--line-soft)}
+.dm-head b{font-size:14.5px}.dm-head b::before{content:"#";color:var(--dim);margin-right:6px}
+.dm-act{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}
+.dm-act button{border:1px solid var(--line);background:#150f27;border-radius:8px;padding:6px 12px;font:600 12.5px var(--f-body);cursor:pointer;display:inline-flex;gap:7px;align-items:center;transition:background-color .2s,border-color .2s,transform .2s}
+.dm-act button::before{content:"";border:5px solid transparent;border-left:8px solid var(--accent-2);border-right:0}
+.dm-act button:hover{background:#1f1640;border-color:var(--accent)}.dm-act button:active{transform:scale(.96)}.dm-act button:disabled{opacity:.5;cursor:wait}
+.dm-feed{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:14px;scrollbar-width:thin}
+.m{display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;animation:mIn .3s var(--ease)}
+@keyframes mIn{from{opacity:0;transform:translateY(8px)}}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:700 14px var(--f-body);color:#fff}
+.av.hb{background:var(--av) center/cover}
+.m-n{display:flex;align-items:center;gap:7px;font:700 13.5px var(--f-body)}.m-n time{font:400 11px var(--f-body);color:var(--dim)}
+.m-n em{font:700 9.5px var(--f-body);font-style:normal;padding:2px 5px;border-radius:4px;background:#5865f2;color:#fff}.m-n em.ow{background:#3a2f0b;color:#facc15}
+.m p{color:var(--muted);font-size:14px;line-height:1.5;margin-top:2px;overflow-wrap:anywhere}.m p code{background:#1a1330;padding:1px 6px;border-radius:5px;color:var(--accent-2);font-size:12.5px}
+.emb{margin-top:6px;max-width:440px;border-radius:6px;border-left:4px solid var(--c,#8b5cf6);background:#15102a;padding:11px 14px}
+.emb h5{font:700 14.5px var(--f-body);margin:0 0 8px}.emb dl{margin:0;display:grid;gap:3px;font-size:13px}.emb dt{display:inline;font-weight:700;color:var(--text)}.emb dd{display:inline;margin:0 0 0 4px;color:var(--muted)}.emb dd i{font-style:normal;background:#252046;color:#c4b5fd;padding:1px 5px;border-radius:4px}
+.emb .ch{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;padding-top:9px;border-top:1px solid var(--line-soft);font-size:11.5px;color:var(--muted)}.emb .ch span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ok,#34d399);margin-right:6px}.emb .ch span:first-child::before{background:#f59e0b}
+.emb .bar{height:5px;border-radius:9px;background:#261d46;margin:10px 0 4px;overflow:hidden}.emb .bar i{display:block;height:100%;width:0;background:var(--accent-2);transition:width 5s linear}
+.emb .btns{display:flex;gap:6px;margin-top:10px}.emb .btns span{font:600 12px var(--f-body);padding:5px 12px;border-radius:7px;background:#251c45}
+.dm-in{margin:0 14px 14px;padding:11px 14px;border-radius:10px;background:#15102a;color:var(--dim);font-size:13.5px}
+.dm-mem{padding:14px 12px;background:#0f0b1c;font-size:13.5px;overflow:hidden}.dm-mem h6{font:600 11px var(--f-body);color:var(--dim);margin:0 6px 10px;letter-spacing:.04em}
+.dm-u{display:flex;align-items:center;gap:9px;padding:5px 6px;color:var(--muted)}.dm-u .av{width:28px;height:28px;font-size:11px}.dm-u em{font:700 9px var(--f-body);font-style:normal;padding:2px 5px;border-radius:4px;background:#5865f2;color:#fff}
+.av{position:relative;background-size:cover;background-position:center;flex:none}
+.av.img{color:transparent}
+.dm-u{border-radius:8px;transition:background-color .2s}.dm-u:hover{background:#1a1330;color:var(--text)}
+.dm-u .av{width:30px;height:30px}
+.dm-u{position:relative}.dm-u .st{position:absolute;left:30px;bottom:4px;width:11px;height:11px;border-radius:50%;border:2px solid #0f0b1c;background:#6b7280}
+.dm-u .st[data-s=online],.m .st[data-s=online]{background:#34d399}.dm-u .st[data-s=idle],.m .st[data-s=idle]{background:#fbbf24}.dm-u .st[data-s=dnd],.m .st[data-s=dnd]{background:#fb7185}
+.dm-u .nm{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dm-u.off{opacity:.55}
+.dm-mem h6.g{margin-top:14px}
+.m-n em.co{background:#2a1850;color:#c4b5fd}
+.m-n .nm{color:var(--text)}.m-n.o .nm{color:#fcd34d}.m-n.l .nm{color:#c4b5fd}
+.m .av{box-shadow:0 0 0 2px rgba(139,92,246,.18)}
+.rx{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.rx span{display:inline-flex;gap:5px;align-items:center;padding:2px 8px;border-radius:8px;background:#1a1330;border:1px solid var(--line-soft);font-size:12px;color:var(--muted);animation:mIn .3s var(--ease)}
+.typing{display:flex;align-items:center;gap:8px;padding:0 16px 6px;min-height:22px;font-size:12px;color:var(--dim)}
+.typing i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent-2);margin-right:3px;animation:tp 1s infinite ease-in-out both}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{0%,80%,100%{transform:scale(.5);opacity:.4}40%{transform:scale(1);opacity:1}}
+.dm-in{display:flex;align-items:center}.dm-in::before{margin-right:10px;content:"+";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#251c45;color:var(--muted);font-weight:700}
+.pv-note{margin-top:14px;font-size:13.5px;color:var(--dim)}
+@media(max-width:1000px){.dm-body,.dm{grid-template-columns:56px 176px minmax(0,1fr)}.dm-mem{display:none}}
+@media(max-width:700px){.dm{height:560px}.dm-body{grid-template-columns:minmax(0,1fr)}.dm-rail,.dm-side{display:none}.dm-main{border:0}.dm-act{margin-left:0}}
+/* Partners */
+.pt{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:22px;align-items:start}
+.pt-flow{position:relative;margin:0;padding:0;list-style:none;display:grid;gap:0}
+.pt-flow::before{content:"";position:absolute;left:21px;top:22px;bottom:22px;width:2px;background:linear-gradient(var(--accent),var(--line-soft))}
+.pt-flow li{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding:0 0 26px}.pt-flow li:last-child{padding:0}
+.pt-flow .n{z-index:1;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--surface-2);border:1px solid var(--accent);font:700 16px var(--f-mono);color:var(--accent-2);box-shadow:0 0 0 6px var(--bg)}
+.pt-flow h3{font-size:20px;margin-bottom:5px}.pt-flow p{color:var(--muted);font-size:14.5px}.pt-flow code{font-size:12.5px;padding:2px 8px;border-radius:7px;background:var(--surface-2);border:1px solid var(--line-soft);color:var(--accent-2)}
+.pt-side{display:grid;gap:16px}
+.pt-card{padding:22px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(160deg,var(--surface-2),var(--surface))}
+.pt-card h3{font-size:18px;margin-bottom:14px}
+.lb{display:grid;gap:8px;margin:0;padding:0;list-style:none}.lb li{display:grid;grid-template-columns:28px 36px minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 12px;border-radius:12px;background:var(--bg-2);border:1px solid var(--line-soft)}
+.lb li:first-child{border-color:rgba(250,204,21,.4);background:linear-gradient(90deg,rgba(250,204,21,.1),var(--bg-2))}
+.lb .rk{font:700 14px var(--f-mono);color:var(--dim)}.lb li:first-child .rk{color:#facc15}.lb b{font-size:14.5px}.lb .pts{font:600 13px var(--f-mono);color:var(--accent-2)}
+.lb .av{width:36px;height:36px;font-size:13px}
+.pt-rules{display:grid;gap:10px;margin:0;padding:0;list-style:none}.pt-rules li{display:flex;gap:10px;color:var(--muted);font-size:14.5px}.pt-rules li::before{content:"";flex:none;width:8px;height:8px;margin-top:8px;border-radius:50%;background:var(--good)}
+.pt-adm{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pt-adm code{padding:5px 10px;border-radius:8px;background:var(--bg-2);border:1px solid var(--line-soft);color:var(--accent-2);font-size:13px}
+@media(max-width:900px){.pt{grid-template-columns:minmax(0,1fr)}}
+html.fx-off .m{animation:none}
 </style>
 </head>
 <body>
@@ -745,9 +829,11 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
     </button>
     <nav class="nav-links" id="navLinks" aria-label="Main">
       <a href="#status">Status</a>
+      <a href="#preview">Preview</a>
       <a href="#features">Features</a>
       <a href="#commands">Commands</a>
       <a class="pl" href="#premium">Premium</a>
+      <a href="#partners">Partners</a>
       <a href="#docs">Docs</a>
       <a href="#developer">Developer</a>
       <a href="#support">Support</a>
@@ -809,13 +895,14 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
           </dl>
           <div class="ctl"><span class="live" id="live" data-s=""><i></i><b>Connecting</b></span><button class="pausebtn" id="pauseBtn" type="button" aria-pressed="false">Pause</button></div>
           <div class="seg" role="group" aria-label="Chart range" id="rangeSeg">
-            <button type="button" data-r="15" aria-pressed="false">15m</button>
-            <button type="button" data-r="30" aria-pressed="true">30m</button>
+            <button type="button" data-r="30" aria-pressed="false">30m</button>
             <button type="button" data-r="60" aria-pressed="false">1h</button>
+            <button type="button" data-r="180" aria-pressed="false">3h</button>
+            <button type="button" data-r="720" aria-pressed="true">Since online</button>
           </div>
         </div>
         <div class="chart" id="chart"><div class="chart-svg"></div><div class="tip" hidden></div></div>
-        <p class="fine" id="chartNote">Ping is the time Homura takes to answer Discord. Lower is better.</p>
+        <p class="fine" id="chartNote">Ping is the time Homura takes to answer Discord. The graph starts when Homura came online and keeps up to the last 12 hours, so it is the same for everyone who opens the page.</p>
         <p class="legend" aria-hidden="true"><span><i style="background:var(--good)"></i>Under 150 ms</span><span><i style="background:var(--warn)"></i>150 to 300 ms</span><span><i style="background:var(--bad)"></i>Over 300 ms or offline</span></p>
       </article>
       <div class="tiles">
@@ -836,6 +923,39 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
 </section>
 
 <!-- Features -->
+<!-- Preview -->
+<section class="sec" id="preview">
+  <div class="wrap">
+    <header class="sec-head"><div>
+      <p class="eyebrow">See it work</p>
+      <h2>Press a button and watch Homura react</h2>
+      <p class="lede">This is a practice server with the real Homura team in it. Pick a feature, then press an action to see exactly what Homura posts when something happens.</p>
+    </div></header>
+    <div class="pv-tabs" id="pvTabs" role="group" aria-label="Pick a feature to preview"></div>
+    <div class="dm" id="dm">
+      <div class="dm-bar" aria-hidden="true"><i></i><i></i><i></i><span>Discord</span></div>
+      <div class="dm-body">
+        <div class="dm-rail" aria-hidden="true"><img src="data:image/png;base64,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" alt=""><b></b><b></b></div>
+        <div class="dm-side" aria-hidden="true">
+          <div class="dm-srv" title="Anoumalous Labs">Anoumalous Labs</div>
+          <h6>TEXT CHANNELS</h6><div class="dm-ch" data-ch="general">general</div><div class="dm-ch" data-ch="rules">rules</div><div class="dm-ch" data-ch="music">music</div>
+          <h6>INFO</h6><div class="dm-ch" data-ch="announcements">announcements</div><div class="dm-ch" data-ch="partnerships">partnerships</div>
+          <h6>STAFF</h6><div class="dm-ch" data-ch="homura-logs">homura-logs</div>
+          <h6>ROLES</h6><div class="dm-roles"><span>Moderator</span><span>Helper</span><span>VIP</span></div>
+        </div>
+        <div class="dm-main">
+          <div class="dm-head"><b id="dmCh">homura-logs</b><span class="pill" data-s="demo">Demo</span><div class="dm-act" id="dmAct"></div></div>
+          <div class="dm-feed" id="dmFeed" aria-live="polite"></div>
+          <div class="typing" id="dmTyp" aria-hidden="true"></div>
+          <div class="dm-in" aria-hidden="true">Message&nbsp;#<span id="dmCh2">homura-logs</span></div>
+        </div>
+        <div class="dm-mem" aria-hidden="true" id="dmMem"></div>
+      </div>
+    </div>
+    <p class="pv-note">Everything here is a simulation. Nothing is sent to Discord.</p>
+  </div>
+</section>
+
 <section class="sec" id="features">
   <div class="wrap">
     <header class="sec-head">
@@ -954,6 +1074,47 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
 </section>
 
 <!-- Docs -->
+<!-- Partners -->
+<section class="sec" id="partners">
+  <div class="wrap">
+    <header class="sec-head"><div>
+      <p class="eyebrow">Partnerships</p>
+      <h2>Run server partnerships without the mess</h2>
+      <p class="lede">Partners get a private ticket, staff get a clear claim system, and ads are posted by the person who handled the deal. Nothing gets lost in DMs.</p>
+    </div></header>
+    <div class="pt">
+      <ol class="pt-flow">
+        <li><span class="n">1</span><div><h3>Partner opens a ticket</h3><p>They press a button on your panel. A private channel opens, visible only to them, your staff and Homura.</p></div></li>
+        <li><span class="n">2</span><div><h3>They save their ad</h3><p>Inside the ticket they run <code>affiliate create your ad here</code>. Images can be attached. Homura saves it and replies with a short code.</p></div></li>
+        <li><span class="n">3</span><div><h3>Staff claims the ticket</h3><p>One staff member presses Claim. From now on only that person can post the ad, so two people never post it twice.</p></div></li>
+        <li><span class="n">4</span><div><h3>Staff posts the ad</h3><p>They run <code>ad post K7F2 2</code> to post it twice in your ad channel. The first successful post gives them a point on the leaderboard.</p></div></li>
+      </ol>
+      <div class="pt-side">
+        <div class="pt-card">
+          <h3>Staff leaderboard</h3>
+          <ol class="lb">
+            <li><span class="rk">1</span><span class="av" data-av="o" style="background:#6366f1">O</span><b data-un="o">Owner</b><span class="pts">42 partners</span></li>
+            <li><span class="rk">2</span><span class="av" data-av="a" style="background:#ec4899">M</span><b data-un="a">Member</b><span class="pts">27 partners</span></li>
+            <li><span class="rk">3</span><span class="av" data-av="l" style="background:#a855f7">L</span><b data-un="l">Luci</b><span class="pts">19 partners</span></li>
+          </ol>
+          <div class="pt-adm"><code>affiliate leaderboard</code><code>affiliate resetlb</code></div>
+        </div>
+        <div class="pt-card">
+          <h3>Built-in safety</h3>
+          <ul class="pt-rules">
+            <li>Close a ticket before posting and the saved ad is dropped.</li>
+            <li>If the partner leaves your server, their ad and every post of it are deleted.</li>
+            <li>Up to 10 posts and 3 images per ad.</li>
+            <li>Buttons keep working after Homura restarts.</li>
+          </ul>
+          <div class="pt-adm"><code>affiliate setup</code><code>affiliate panel</code><code>affiliate send</code></div>
+        </div>
+        <div class="cta" style="margin:0"><a class="btn" href="#preview" data-pv="affiliate">Try it in the preview</a><a class="btn ghost" href="#commands">See the commands</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="docs">
   <div class="wrap">
     <header class="sec-head">
@@ -970,6 +1131,7 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
           <li><a href="#d-start">Getting started</a></li>
           <li><a href="#d-prefix">Prefix and slash</a></li>
           <li><a href="#d-setup">Quick setup</a></li>
+          <li><a href="#d-alias">Custom aliases</a></li>
           <li><a href="#d-access">Who can use what</a></li>
           <li><a href="#d-security">Security guide</a></li>
           <li><a href="#d-mod">Moderation guide</a></li>
@@ -994,7 +1156,7 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
           <h3>Prefix and slash</h3>
           <p>You can run most commands two ways. Type the prefix before the command, like <code class="cmd">ping</code>, or type <code class="slash">/</code> and pick the command from the Discord menu. Both do the same thing.</p>
           <p>The default prefix is <code>.</code> You can change it per server with <code class="cmd">setprefix</code>, for example <code class="cmd">setprefix !</code>, and go back with <code class="cmd">resetprefix</code>. Forgot it? Run <code class="cmd">prefix</code>. Type your own prefix in the box on the command list and every example on this page updates.</p>
-          <p>Many commands have a shorter alias. <code class="cmd">ban</code> and <code class="cmd">hackban</code> are the same command. Two commands are slash only: <code class="slash">/security-panel</code> and <code class="slash">/extra-owner</code>.</p>
+          <p>Homura has no built-in shortcuts. Want <code class="cmd">antinuke</code> to be just <code class="cmd">an</code>? Make it yourself in <a href="#d-alias">Custom aliases</a>. Two commands are slash only: <code class="slash">/security-panel</code> and <code class="slash">/extra-owner</code>.</p>
         </section>
 
         <section id="d-setup">
@@ -1009,6 +1171,35 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
             <li><div><strong>Welcome your members</strong>Run <code class="cmd">welcome</code> to see the options and <code class="cmd">welcome variables</code> to see what you can put in the message, like the member’s name.</div></li>
             <li><div><strong>Make a backup (owner only, Premium)</strong>Backups need Premium. Run <code class="cmd">backup create</code>. If anything ever goes wrong, you can rebuild from it.</div></li>
           </ol>
+        </section>
+
+        <section id="d-alias">
+          <h3>Custom aliases</h3>
+          <p>An alias is a short name you pick for a command. Every server makes its own, so your shortcuts never change another server. You need <b>Manage Server</b> to create them. Everyone can use them.</p>
+          <div class="al-demo" aria-label="Alias example">
+            <div class="al-box"><small>You type</small><code>.alias add an antinuke</code></div>
+            <span class="al-arrow" aria-hidden="true">then</span>
+            <div class="al-box"><small>Now this works</small><code>.an setup</code></div>
+            <span class="al-arrow" aria-hidden="true">same as</span>
+            <div class="al-box dim"><small>Full command</small><code>.antinuke setup</code></div>
+          </div>
+          <ol class="steps">
+            <li><div><strong>Open the alias panel</strong>Run <code class="cmd">alias</code>. You see every shortcut in your server and can add or remove them with buttons.</div></li>
+            <li><div><strong>Add a shortcut</strong>Run <code class="cmd">alias add an antinuke</code>. The <b>short name comes first</b>, then the <b>real command</b>. Done. It also appears as <code class="slash">/an</code> when the command has a slash version.</div></li>
+            <li><div><strong>Use it like the real command</strong>Run <code class="cmd">an setup</code>. Permissions and cooldowns are the same as the full name, so an alias never gives someone extra power.</div></li>
+            <li><div><strong>Want a different name?</strong>A command can have <b>only one alias</b>. Run <code class="cmd">alias remove an</code> first, then add the new one.</div></li>
+          </ol>
+          <div class="tbl"><table>
+            <thead><tr><th>Rule</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td>Who can add or remove</td><td>Server owner, Administrator, or Manage Server</td></tr>
+              <tr><td>Name</td><td>1 to 20 characters. Letters, numbers, <code>-</code> or <code>_</code>. No spaces.</td></tr>
+              <tr><td>Not allowed</td><td>A name that is already a command or already another alias. Owner tools cannot get aliases.</td></tr>
+              <tr><td>Limit</td><td>25 aliases per server, one per command</td></tr>
+              <tr><td>Other commands</td><td><code class="cmd">alias list</code> shows all. <code class="cmd">alias reset</code> removes all after a confirm.</td></tr>
+            </tbody>
+          </table></div>
+          <div class="note"><b>Slash not showing?</b> Commands with no slash version only work with the prefix. For the rest, wait a minute, then press Ctrl + R on desktop or restart the app on mobile.</div>
         </section>
 
         <section id="d-access">
@@ -1088,6 +1279,7 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
           <div class="faq">
             <details><summary>Homura does not answer my commands</summary><p>Try <code class="slash">/ping</code>. If the slash command works but the prefix does not, the prefix was changed (run <code class="cmd">prefix</code> to check) or the channel is ignored (run <code class="cmd">ignorelist</code>). Also make sure Homura can see and send messages in that channel.</p></details>
             <details><summary>I get a missing permissions error</summary><p>Almost always the role order. Drag Homura’s role above the roles it needs to manage, and make sure it has the Discord permission for the action, like Ban Members.</p></details>
+            <details><summary>My alias says it already exists</summary><p>Either that name is already a command or another alias, or the command already has one. A command can only have one alias, so run <code class="cmd">alias list</code>, remove the old one with <code class="cmd">alias remove name</code>, then add the new one.</p></details>
             <details><summary>Slash commands do not show up</summary><p>Reinvite Homura with the slash commands option enabled, then refresh Discord with Ctrl + R on desktop or restart the app on mobile. New commands can take a few minutes to appear.</p></details>
             <details><summary>Why does Homura ask for the Administrator permission?</summary><p>Homura is an all in one security bot. Antinuke has to undo mass bans, restore deleted channels and roles, and remove dangerous permissions. Antiraid has to lock channels and kick or ban in bulk, and backup has to rebuild your whole server. These need access to everything, and giving each permission one by one often leaves gaps that attackers can use. Homura only uses the permissions a feature needs when you turn that feature on, and you can see what it did in your logs. For safety, keep Homura’s role below your owner and head admins, and only give the extra owner role to people you trust.</p></details>
             <details><summary>I cannot use a command tagged Server owner</summary><p>Only the server owner and extra owners can run those. If you are a co-owner, ask the server owner to add you with <code class="slash">/extra-owner add</code>.</p></details>
@@ -1162,8 +1354,10 @@ html.fx-off #petals,html.fx-off #trail,html.fx-off #bgFx,html.fx-off #gPetals,ht
     <a class="brand" href="#top"><span class="brand-av" role="img" aria-label="Homura avatar"></span>Homura</a>
     <nav aria-label="Footer">
       <a href="#status">Status</a>
+      <a href="#preview">Preview</a>
       <a href="#commands">Commands</a>
       <a href="#premium">Premium</a>
+      <a href="#partners">Partners</a>
       <a href="#docs">Docs</a>
       <a href="#developer">Developer</a>
       <a href="https://discord.gg/YeVRt4JtH3" target="_blank" rel="noopener">Support server</a>
@@ -1187,7 +1381,7 @@ const CONFIG={
   API_URL:"/api/stats",                            // your bot's stats endpoint, e.g. "https://api.example.com/api/stats". Empty shows demo data.
   SUPPORT_URL:"https://discord.gg/YeVRt4JtH3",
   INVITE_URL:"https://discord.com/oauth2/authorize?client_id=1566651036003868752&permissions=8&integration_type=0&scope=bot+applications.commands",                           // your bot invite link. Empty hides the Invite Homura buttons.
-  POLL_MS:5000, // how often to ask your API. 5s is gentle on the bot, and it backs off by itself while the API is down.
+  POLL_MS:4000, // how often to ask your API. 5s is gentle on the bot, and it backs off by itself while the API is down.
   OWNER_ID:"1530686788824469646",                 // your Discord user ID (used only for the profile link and avatar lookup)
   OWNER_NAME:"",                           // optional: shows this name if the live lookup fails
   OWNER_USERNAME:"",                       // optional: your @username, example \"dk\"
@@ -1215,15 +1409,15 @@ const CATS=[
 const RAW={
 mod:[
  ["kick","","Removes a member from the server. They can rejoin later with a new invite.","kick @user [reason]"],
- ["ban","hackban","Bans a member from the server. Use a user ID to ban someone who already left or has not joined yet. That is what the hackban alias is for.","ban @user [reason]"],
+ ["ban","","Bans a member from the server. Use a user ID to ban someone who already left or has not joined yet. That is what the hackban alias is for.","ban @user [reason]"],
  ["unban","","Lifts a ban so the person can join again.","unban <user ID>"],
  ["unbanall","","Removes every ban on the server in one go. Double check before you run it.","unbanall"],
- ["hardban","hb","A stronger ban. The user stays banned even if someone unbans them by hand, until you remove it with unhardban.","hardban @user [reason]"],
- ["unhardban","uhb","Removes a hardban.","unhardban <user ID>"],
+ ["hardban","","A stronger ban. The user stays banned even if someone unbans them by hand, until you remove it with unhardban.","hardban @user [reason]"],
+ ["unhardban","","Removes a hardban.","unhardban <user ID>"],
  ["softban","","Bans and instantly unbans a member. Their recent messages are wiped, but they are free to come back.","softban @user [reason]"],
  ["fakeban","","Pretends to ban someone. Nobody is actually removed, so it is safe for jokes.","fakeban @user"],
- ["mute","timeout","Puts a member in timeout. They cannot chat, react or talk in voice until it ends.","mute @user 10m [reason]"],
- ["unmute","untimeout","Ends a timeout early.","unmute @user"],
+ ["mute","","Puts a member in timeout. They cannot chat, react or talk in voice until it ends.","mute @user 10m [reason]"],
+ ["unmute","","Ends a timeout early.","unmute @user"],
  ["nick","","Changes a member’s nickname.","nick @user New Name"],
  ["lock","","Stops regular members from sending messages in a channel.","lock [#channel]"],
  ["unlock","","Lets members send messages in the channel again.","unlock [#channel]"],
@@ -1233,25 +1427,25 @@ mod:[
  ["unhide","","Makes a hidden channel visible again.","unhide [#channel]"],
  ["hideall","","Hides every channel from regular members.","hideall"],
  ["unhideall","","Shows every hidden channel again.","unhideall"],
- ["slowmode","slow","Sets how many seconds members must wait between messages in a channel.","slowmode 10"],
+ ["slowmode","","Sets how many seconds members must wait between messages in a channel.","slowmode 10"],
  ["unslowmode","","Turns slowmode off in the channel.","unslowmode"],
- ["snipe","s","Shows the last message that was deleted in this channel. Great for catching people who delete the evidence.","snipe"],
- ["editsnipe","es","Shows the original text of the last message that was edited in this channel.","editsnipe"],
- ["clearsnipe","cs","Wipes the saved snipe and editsnipe messages for this channel.","clearsnipe"],
- ["channel","ch","Manage channels without opening server settings.","channel create general-chat",["create|Make a new channel","delete|Delete a channel","rename|Rename a channel","clone|Copy a channel with its settings","transfer|Move a channel to another category"]],
+ ["snipe","","Shows the last message that was deleted in this channel. Great for catching people who delete the evidence.","snipe"],
+ ["editsnipe","","Shows the original text of the last message that was edited in this channel.","editsnipe"],
+ ["clearsnipe","","Wipes the saved snipe and editsnipe messages for this channel.","clearsnipe"],
+ ["channel","","Manage channels without opening server settings.","channel create general-chat",["create|Make a new channel","delete|Delete a channel","rename|Rename a channel","clone|Copy a channel with its settings","transfer|Move a channel to another category"]],
  ["warn","","Gives a member a formal warning and saves it to their record.","warn @user [reason]"],
- ["warnings","warns","Lists all the warnings a member has.","warnings @user"],
- ["unwarn","delwarn","Removes a single warning from a member.","unwarn @user"],
+ ["warnings","","Lists all the warnings a member has.","warnings @user"],
+ ["unwarn","","Removes a single warning from a member.","unwarn @user"],
  ["clearwarns","","Removes all warnings from a member.","clearwarns @user"],
- ["modlogs","cases","Shows every moderation action taken against a member, like warns, mutes and bans.","modlogs @user"],
+ ["modlogs","","Shows every moderation action taken against a member, like warns, mutes and bans.","modlogs @user"],
  ["case","","Opens one moderation case by its number so you can see who did it and why.","case 12"],
- ["warnconfig","warnset","Controls what happens as members collect warnings.","warnconfig threshold 3",["threshold|How many warnings trigger a punishment","punishment|What Homura does at that point, like mute or kick","duration|How long the punishment lasts","expire|How long a warning stays on a member’s record","logchannel|Where warnings are logged"]],
- ["jail","tempjail","Sends a member to jail. They lose access to your channels and can only see the jail channel. Add a time to jail them temporarily.","jail @user [10m] [reason]"],
+ ["warnconfig","","Controls what happens as members collect warnings.","warnconfig threshold 3",["threshold|How many warnings trigger a punishment","punishment|What Homura does at that point, like mute or kick","duration|How long the punishment lasts","expire|How long a warning stays on a member’s record","logchannel|Where warnings are logged"]],
+ ["jail","","Sends a member to jail. They lose access to your channels and can only see the jail channel. Add a time to jail them temporarily.","jail @user [10m] [reason]"],
  ["unjail","","Frees a jailed member and gives their access back.","unjail @user"],
- ["jailed","jails","Lists everyone who is in jail right now.","jailed"],
+ ["jailed","","Lists everyone who is in jail right now.","jailed"],
  ["jailsetup","","Creates the jail role and channel. Run this once before you use jail.","jailsetup"],
  ["jailstatus","","Shows your current jail setup and whether it is working.","jailstatus"],
- ["clear","purge, clean","Deletes a number of recent messages from the channel.","clear 50"],
+ ["clear","","Deletes a number of recent messages from the channel.","clear 50"],
  ["clearall","","Bulk deletes recent messages of every kind in the channel.","clearall 100"],
  ["clearuser","","Deletes recent messages sent by one member.","clearuser @user"],
  ["clearbots","","Deletes recent messages sent by bots.","clearbots"],
@@ -1265,33 +1459,36 @@ mod:[
  ["quarantine","","Isolates suspicious members so they cannot do anything while you check them.","quarantine add @user",["add|Quarantine a member","release|Let a member out of quarantine","sync|Refresh the quarantine restrictions across your channels"]]
 ],
 sec:[
- ["antinuke","an, sec","Protects your server from a “nuke”, where someone with permissions quickly bans members or deletes channels and roles. Homura spots it and punishes the person doing it.","antinuke setup",["help|Overview of antinuke commands","modules|See every protection module","panel|Open the control panel","setup|Turn antinuke on with recommended settings","enable|Turn a module on","disable|Turn a module off","status|See what is on and off","filters|Fine tune the limits of each module","wizard|Step by step guided setup","logchannel|Choose where alerts are sent","punishment|Choose what happens to offenders"],"so"],
- ["whitelist","wl","Adds trusted people that Homura’s security should ignore, like your head admins or trusted bots.","whitelist @user",null,"so"],
- ["extraowner","eo","Gives someone owner level access to Homura’s security commands without making them the server owner. Choose carefully.","extraowner add @user",["add|Make someone an extra owner","remove|Take it away","list|See all extra owners"],"so"],
+ ["antinuke","","Protects your server from a “nuke”, where someone with permissions quickly bans members or deletes channels and roles. Homura spots it and punishes the person doing it.","antinuke setup",["help|Overview of antinuke commands","modules|See every protection module","panel|Open the control panel","setup|Turn antinuke on with recommended settings","enable|Turn a module on","disable|Turn a module off","status|See what is on and off","filters|Fine tune the limits of each module","wizard|Step by step guided setup","logchannel|Choose where alerts are sent","punishment|Choose what happens to offenders"],"so"],
+ ["whitelist","","Adds trusted people that Homura’s security should ignore, like your head admins or trusted bots.","whitelist @user",null,"so"],
+ ["extraowner","","Gives someone owner level access to Homura’s security commands without making them the server owner. Choose carefully.","extraowner add @user",["add|Make someone an extra owner","remove|Take it away","list|See all extra owners"],"so"],
  ["antiraid","","Defends against raids, when many accounts join and spam at once. It can lock your server automatically. Premium only.","antiraid panel",["panel|Open the control panel","help|Overview of antiraid commands","lockdown|Lock the server","raidmode|Turn on stricter rules for new joins","panic|Emergency mode. Locks everything right now","whitelist list|See who is whitelisted","setup|First time setup|so","enable|Turn antiraid on|so","disable|Turn antiraid off|so","module|Switch a module on or off|so","set|Change a setting|so","action|Choose what happens to raiders|so","autolock|Lock automatically when a raid is detected|so","logs|Choose where logs are sent|so","extapps|Control external apps|so","restore|Restore your server after a raid|so","unlock|End a lockdown|so","unpanic|End panic mode|so","whitelist add|Add someone to the whitelist|so","whitelist remove|Remove someone from the whitelist|so","extraowner add|Add an extra owner|so","extraowner remove|Remove an extra owner|so"],"sopart,prem"],
- ["j2l","antij2l","Join to leave protection. Catches accounts that join and leave right away, a common raid and spam trick.","j2l"],
- ["honeypot","hp","Sets a trap channel. Real members never post in it, so anyone who does, usually a spam bot, gets punished automatically.","honeypot setup",["setup|Create the trap channel","whitelist|Exempt a user or role","enable|Turn it on","disable|Turn it off","channel|Change the trap channel","logchannel|Choose where catches are logged","action|Choose the punishment","settings|See current settings","reset|Remove all honeypot settings"]],
- ["automod","am","Automatically removes messages that break your rules, like spam, invite links, bad words and mass mentions, then punishes repeat offenders. It also creates Discord’s own AutoMod rules for you.","automod enable",["help|Overview of automod","enable|Turn automod on","disable|Turn automod off","manage|Choose which rules are active","settings|See your settings","punishments|Choose what happens when someone breaks a rule","rules|List every rule automod can enforce","native|Use Discord’s built in AutoMod","reset|Go back to default settings","logging|Choose where actions are logged","wlrole|Exempt a role","wluser|Exempt a user","wlchannel|Exempt a channel","whitelist show|See everything that is exempt","whitelist role|Exempt a role","whitelist user|Exempt a user","whitelist channel|Exempt a channel","whitelist reset|Clear the exemptions","blacklist add|Block a word or link","blacklist remove|Unblock a word or link","blacklist list|See blocked words and links"]],
+ ["j2l","","Join to leave protection. Catches accounts that join and leave right away, a common raid and spam trick.","j2l"],
+ ["honeypot","","Sets a trap channel. Real members never post in it, so anyone who does, usually a spam bot, gets punished automatically.","honeypot setup",["setup|Create the trap channel","whitelist|Exempt a user or role","enable|Turn it on","disable|Turn it off","channel|Change the trap channel","logchannel|Choose where catches are logged","action|Choose the punishment","settings|See current settings","reset|Remove all honeypot settings"]],
+ ["automod","","Automatically removes messages that break your rules, like spam, invite links, bad words and mass mentions, then punishes repeat offenders. It also creates Discord’s own AutoMod rules for you.","automod enable",["help|Overview of automod","enable|Turn automod on","disable|Turn automod off","manage|Choose which rules are active","settings|See your settings","punishments|Choose what happens when someone breaks a rule","rules|List every rule automod can enforce","native|Use Discord’s built in AutoMod","reset|Go back to default settings","logging|Choose where actions are logged","wlrole|Exempt a role","wluser|Exempt a user","wlchannel|Exempt a channel","whitelist show|See everything that is exempt","whitelist role|Exempt a role","whitelist user|Exempt a user","whitelist channel|Exempt a channel","whitelist reset|Clear the exemptions","blacklist add|Block a word or link","blacklist remove|Unblock a word or link","blacklist list|See blocked words and links"]],
  ["backup","","Saves a copy of your server layout, like roles, channels and settings, so you can rebuild it after a disaster.","backup create",["create|Make a new backup","info|See the details of a backup","export|Export a backup","delete|Delete a backup","restore|Rebuild your server from a backup","access|Control who can use backups"],"so,prem"],
  ["linkscan","","Automatically checks links, images and GIFs that members send. If one is a phishing or malware link, Homura deletes it, times the sender out for 5 minutes and shows a short warning. Logs go to a private staff channel.","linkscan setup",["setup|One time setup, creates a private log channel","<link>|Scan one link by hand","status|See if it is on and how many links it has checked"],"prem"],
  ["/security-panel","","Opens a panel with Homura’s security status and buttons to change it.","/security-panel",null,"slash"],
  ["/extra-owner","","Slash version of extraowner. Add, remove or list extra owners.","/extra-owner add @user",["add|Make someone an extra owner","remove|Take it away","list|See all extra owners"],"slash,so"],
  ["verify","","Makes new members prove they are real before they can see your server.","verify post",["post|Send the verify message to a channel","force|Verify a member yourself","unverify|Take away someone’s verified status"]],
- ["log","logging","Records what happens in your server, like joins, edits, deletes and role changes, into log channels.","log setup",["setup|Quick setup of your log channels","set|Choose a channel for one type of log","enable|Turn a log type on","disable|Turn a log type off","types|See every log type","config|See your current setup","reset|Clear all log settings"]]
+ ["log","","Records what happens in your server, like joins, edits, deletes and role changes, into log channels.","log setup",["setup|Quick setup of your log channels","set|Choose a channel for one type of log","enable|Turn a log type on","disable|Turn a log type off","types|See every log type","config|See your current setup","reset|Clear all log settings"]]
 ],
 setup:[
- ["welcome","greet","Sends a message when someone joins your server. Customize it with variables, like the member’s name.","welcome",["test|Preview your welcome message","variables|See the variables you can use","reset|Go back to the default"]],
- ["farewell","bye","Sends a goodbye message when someone leaves. You can use plain text or an embed, with colors and images.","farewell setup",["setup|Guided setup","channel|Choose where it posts","type|Choose plain text or embed","content|Set the text above the embed","title|Set the embed title","description|Set the embed description","message|Set the whole message","color|Set the embed color","thumbnail|Add a small image","image|Add a large image","footerimage|Add an image in the footer","deleteafter|Delete the message after some seconds","test|Preview it","config|See your current setup","variables|See the variables you can use","disable|Turn it off"]],
- ["joindm","jdm","Sends a private message to every new member when they join.","joindm setup",["setup|Write and turn on the join message"]],
+ ["alias","","Give any command your own short name for this server. Homura ships with no shortcuts, so you choose them. One alias per command.","alias add an antinuke",["add|Create a shortcut (alias first, command second)|so","remove|Delete a shortcut","list|See every shortcut in this server","reset|Delete all shortcuts|so"],"so"],
+ ["affiliate","aff","Partnership tickets. Partners save their ad inside a private ticket, and staff post it after claiming the ticket.","affiliate create <your ad>",["create|Save your ad and get a short code","setup|One-shot setup for roles, channels and panel|so","panel|Edit the panel, buttons and messages|so","send|Post the panel again|so","leaderboard|Who closed the most partnerships","resetlb|Reset the leaderboard|so"]],
+ ["ad","","Staff only, and only the member who claimed the ticket. Posts or deletes a partner’s saved ad.","ad post K7F2 2",["post|Post the saved ad up to 10 times","remove|Delete the ad and every post of it"]],
+ ["welcome","","Sends a message when someone joins your server. Customize it with variables, like the member’s name.","welcome",["test|Preview your welcome message","variables|See the variables you can use","reset|Go back to the default"]],
+ ["farewell","","Sends a goodbye message when someone leaves. You can use plain text or an embed, with colors and images.","farewell setup",["setup|Guided setup","channel|Choose where it posts","type|Choose plain text or embed","content|Set the text above the embed","title|Set the embed title","description|Set the embed description","message|Set the whole message","color|Set the embed color","thumbnail|Add a small image","image|Add a large image","footerimage|Add an image in the footer","deleteafter|Delete the message after some seconds","test|Preview it","config|See your current setup","variables|See the variables you can use","disable|Turn it off"]],
+ ["joindm","","Sends a private message to every new member when they join.","joindm setup",["setup|Write and turn on the join message"]],
  ["autorole","","Gives roles to new members automatically. You can set different roles for humans and bots.","autorole humans add @Member",["humans add|Give this role to every new human","humans remove|Stop giving it","humans list|See the human roles","bots add|Give this role to every new bot","bots remove|Stop giving it","bots list|See the bot roles"]],
- ["role","r","Give, take and manage roles.","role add @user @Role",["add|Give a role to a member","remove|Take a role from a member","create|Make a new role","delete|Delete a role","rename|Rename a role","colour|Change a role’s color","all|Give a role to everyone","humans|Give a role to all humans","bots|Give a role to all bots"]],
+ ["role","","Give, take and manage roles.","role add @user @Role",["add|Give a role to a member","remove|Take a role from a member","create|Make a new role","delete|Delete a role","rename|Rename a role","colour|Change a role’s color","all|Give a role to everyone","humans|Give a role to all humans","bots|Give a role to all bots"]],
  ["rrole","","Shortcut to remove a role from a member.","rrole @user @Role"],
  ["rrolehumans","","Removes a role from every human in the server.","rrolehumans @Role"],
  ["rrolebots","","Removes a role from every bot in the server.","rrolebots @Role"],
  ["rroleall","","Removes a role from everyone in the server.","rroleall @Role"],
- ["reactionrole","rr","Lets members pick a role by clicking a reaction on a message.","reactionrole add",["add|Link a reaction to a role","remove|Remove one link","list|See all reaction roles","clear|Remove all reaction roles from a message"]],
- ["autoresponder","ar","Makes Homura reply automatically when someone says a certain word or phrase.","autoresponder add",["add|Reply when a message is exactly the trigger","addcontains|Reply when a message contains the trigger","addstart|Reply when a message starts with the trigger","remove|Delete a trigger","list|See all triggers","clear|Delete all triggers","settings|Change how responders behave"]],
- ["autoreact","arc","Automatically reacts with an emoji when someone says a trigger word.","autoreact"],
+ ["reactionrole","","Lets members pick a role by clicking a reaction on a message.","reactionrole add",["add|Link a reaction to a role","remove|Remove one link","list|See all reaction roles","clear|Remove all reaction roles from a message"]],
+ ["autoresponder","","Makes Homura reply automatically when someone says a certain word or phrase.","autoresponder add",["add|Reply when a message is exactly the trigger","addcontains|Reply when a message contains the trigger","addstart|Reply when a message starts with the trigger","remove|Delete a trigger","list|See all triggers","clear|Delete all triggers","settings|Change how responders behave"]],
+ ["autoreact","","Automatically reacts with an emoji when someone says a trigger word.","autoreact"],
  ["sticky","","Keeps a message at the bottom of a channel. Whenever people chat, Homura reposts it so it stays visible. Great for rules.","sticky Please read the rules!"],
  ["unsticky","","Stops the sticky message in this channel.","unsticky"],
  ["stickynow","","Reposts the sticky right now instead of waiting.","stickynow"],
@@ -1318,25 +1515,25 @@ setup:[
  ["ignore","","Makes Homura ignore commands in a channel.","ignore #channel"],
  ["unignore","","Makes Homura listen in that channel again.","unignore #channel"],
  ["ignorelist","","Shows everything Homura is ignoring.","ignorelist"],
- ["ticket","tk","A support ticket system. Members click a button and get a private channel with your staff.","ticket setup",["setup|Guided setup","menu|Customize the ticket menu","card|Customize the ticket card members see","dock|Customize the ticket dock","studio|Design your ticket panels","extras|Extra ticket options","panels|See your ticket panels","post|Send a panel to a channel","discard|Close a ticket without saving it","archive|Save a copy of the ticket chat","include|Add someone to a ticket","exclude|Remove someone from a ticket","end|Close the ticket"]],
- ["vanityrole","vr","Gives a role to members who show your server’s vanity link in their status.","vanityrole panel",["panel|Open the settings panel","set|Choose the role and link","remove|Turn it off","status|See how it is set up","sync|Check everyone again right now"]]
+ ["ticket","","A support ticket system. Members click a button and get a private channel with your staff.","ticket setup",["setup|Guided setup","menu|Customize the ticket menu","card|Customize the ticket card members see","dock|Customize the ticket dock","studio|Design your ticket panels","extras|Extra ticket options","panels|See your ticket panels","post|Send a panel to a channel","discard|Close a ticket without saving it","archive|Save a copy of the ticket chat","include|Add someone to a ticket","exclude|Remove someone from a ticket","end|Close the ticket"]],
+ ["vanityrole","","Gives a role to members who show your server’s vanity link in their status.","vanityrole panel",["panel|Open the settings panel","set|Choose the role and link","remove|Turn it off","status|See how it is set up","sync|Check everyone again right now"]]
 ],
 engage:[
- ["leaderboard","lb, top","Shows the top members of your server.","leaderboard"],
+ ["leaderboard","","Shows the top members of your server.","leaderboard"],
  ["levels","","Shows your level and XP. Server owners can also edit levels.","levels",["set|Set a member’s level|so","add xp|Give a member XP|so","add level|Give a member levels|so","reset|Reset levels|so"],"sopart"],
- ["messages","m","Shows how many messages you or another member have sent.","messages @user"],
+ ["messages","","Shows how many messages you or another member have sent.","messages @user"],
  ["addmessages","","Adds to a member’s message count.","addmessages @user 100"],
  ["removemessages","","Takes away from a member’s message count.","removemessages @user 100"],
  ["resetmessages","","Sets a member’s message count back to zero.","resetmessages @user"],
- ["invites","i","Shows how many people someone has invited to the server.","invites @user"],
+ ["invites","","Shows how many people someone has invited to the server.","invites @user"],
  ["tracker","","Invite tracker. Shows who invited members and which invite they used.","tracker"],
  ["blacklistchannel","","Stops XP and message counting in a channel.","blacklistchannel #channel"],
  ["unblacklistchannel","","Starts counting again in a channel.","unblacklistchannel #channel"],
  ["blacklistedchannels","","Lists the channels where counting is turned off.","blacklistedchannels"],
- ["giveaway","g","Run giveaways with buttons. Members enter with one click and Homura picks the winners when time is up.","giveaway gpanel",["gpanel|Open the giveaway panel (alias gsetup)","gstart|Start a giveaway","gend|End a giveaway early","greroll|Pick a new winner","glist|See running giveaways","gdelete|Delete a giveaway"]]
+ ["giveaway","","Run giveaways with buttons. Members enter with one click and Homura picks the winners when time is up.","giveaway gpanel",["gpanel|Open the giveaway panel (alias gsetup)","gstart|Start a giveaway","gend|End a giveaway early","greroll|Pick a new winner","glist|See running giveaways","gdelete|Delete a giveaway"]]
 ],
 music:[
- ["play","p","Plays a song from a name or link. If something is already playing, the song joins the queue.","play lofi hip hop"],
+ ["play","","Plays a song from a name or link. If something is already playing, the song joins the queue.","play lofi hip hop"],
  ["search","","Searches for songs and lets you pick which one to play.","search kapag tayo na"],
  ["nowplaying","","Shows the song that is playing right now.","nowplaying"],
  ["pause","","Pauses the music.","pause"],
@@ -1346,15 +1543,15 @@ music:[
  ["stop","","Stops the music.","stop"],
  ["replay","","Plays the current song again from the start.","replay"],
  ["seek","","Jumps to a time in the current song.","seek 1:30"],
- ["queue","q","Shows the list of upcoming songs.","queue"],
+ ["queue","","Shows the list of upcoming songs.","queue"],
  ["clearqueue","","Removes every song from the queue.","clearqueue"],
  ["removetrack","","Removes one song from the queue by its number.","removetrack 3"],
  ["shuffle","","Mixes up the order of the queue.","shuffle"],
  ["loop","","Repeats the current song or the whole queue.","loop"],
  ["autoplay","","When the queue ends, Homura keeps playing similar songs.","autoplay"],
- ["volume","vol","Changes the volume.","volume 80"],
+ ["volume","","Changes the volume.","volume 80"],
  ["join","","Makes Homura join your voice channel.","join"],
- ["disconnect","dc, leave","Makes Homura leave the voice channel.","disconnect"],
+ ["disconnect","","Makes Homura leave the voice channel.","disconnect"],
  ["247","","Keeps Homura in the voice channel all day, even when nothing is playing.","247",null,"prem"],
  ["karaoke","","Applies a karaoke effect that tries to reduce the vocals.","karaoke",null,"prem"],
  ["lyrics","","Shows the lyrics of the current song.","lyrics"],
@@ -1363,26 +1560,26 @@ music:[
  ["profile","","Shows your music profile.","profile"],
  ["musichistory","","Shows the songs you played recently.","musichistory"],
  ["music","","Help for all the music commands.","music"],
- ["playlist","pl","Save and replay your own playlists.","playlist save My Mix",["save|Save the current queue as a playlist","show|See your playlists","play|Play one of your playlists","add|Add a song to a playlist","delete|Delete a playlist"]],
+ ["playlist","","Save and replay your own playlists.","playlist save My Mix",["save|Save the current queue as a playlist","show|See your playlists","play|Play one of your playlists","add|Add a song to a playlist","delete|Delete a playlist"]],
  ["fm","","Connect your Last.fm account to see and play what you listen to.","fm connect",["now|See what you are listening to now","connect|Link your Last.fm account","disconnect|Unlink it","recent|See your recent tracks","top|See your top artists and tracks","profile|See your Last.fm profile","chart|See your listening chart","play|Play your current track in voice"]],
- ["spotify","sp","Connect your Spotify account to see and play your music.","spotify connect",["connect|Link your Spotify account","disconnect|Unlink it","recent|See your recent tracks","top|See your top artists and tracks","playlists|See your playlists","play|Play from your Spotify in voice"]]
+ ["spotify","","Connect your Spotify account to see and play your music.","spotify connect",["connect|Link your Spotify account","disconnect|Unlink it","recent|See your recent tracks","top|See your top artists and tracks","playlists|See your playlists","play|Play from your Spotify in voice"]]
 ],
 util:[
- ["help","h, menu","Opens the help menu with every category.","help"],
- ["botinfo","about, stats","Shows information about Homura, like servers, users and uptime.","botinfo"],
- ["serverinfo","si","Shows information about this server, like owner, members, channels and boosts.","serverinfo"],
- ["userinfo","ui, whois","Shows information about a member, like when they joined and their roles.","userinfo @user"],
+ ["help","","Opens the help menu with every category.","help"],
+ ["botinfo","","Shows information about Homura, like servers, users and uptime.","botinfo"],
+ ["serverinfo","","Shows information about this server, like owner, members, channels and boosts.","serverinfo"],
+ ["userinfo","","Shows information about a member, like when they joined and their roles.","userinfo @user"],
  ["ping","","Shows how fast Homura answers.","ping"],
  ["uptime","","Shows how long Homura has been online.","uptime"],
  ["shards","","Shows Homura’s shards. A shard is a separate connection that handles part of the servers.","shards"],
  ["users","","Shows how many users Homura looks after across all servers.","users"],
  ["invite","","Gives you the link to add Homura to a server.","invite"],
- ["weather","w","Shows the weather for a place.","weather Manila"],
- ["membercount","mc","Shows how many members the server has.","membercount"],
- ["boostcount","bc","Shows how many boosts the server has.","boostcount"],
+ ["weather","","Shows the weather for a place.","weather Manila"],
+ ["membercount","","Shows how many members the server has.","membercount"],
+ ["boostcount","","Shows how many boosts the server has.","boostcount"],
  ["joindate","","Shows when a member joined the server.","joindate @user"],
  ["audit","","Shows recent entries from the server audit log.","audit"],
- ["avatar","av, pfp","Shows a member’s profile picture in full size.","avatar @user"],
+ ["avatar","","Shows a member’s profile picture in full size.","avatar @user"],
  ["banner","","Shows a member’s profile banner.","banner @user"],
  ["servericon","","Shows the server’s icon in full size.","servericon"],
  ["serverbanner","","Shows the server’s banner.","serverbanner"],
@@ -1392,10 +1589,10 @@ util:[
  ["say","","Makes Homura say something in the channel.","say Hello everyone"],
  ["feedback","","Sends feedback or an idea to the Homura team.","feedback Please add this"],
  ["report","","Reports a problem to the Homura team.","report The music is lagging"],
- ["premium","prem","Shows your premium status and what premium includes.","premium"],
+ ["premium","","Shows your premium status and what premium includes.","premium"],
  ["np","","No prefix. Lets approved users run commands without typing the prefix.","np help",["slots|See the no prefix slots","redeem|Redeem a no prefix code","give|Give your slot to someone","help|Explain how no prefix works"]],
  ["nppanel","","Opens the no prefix panel.","nppanel"],
- ["list","ls","Quick lists of things in your server, like roles, bans or members with a badge.","list roles",["roles|All roles","users|All users","bots|All bots","bans|Banned users","boosters|Server boosters","emojis|All emojis","channels|All channels","timeouts|Members in timeout","hasperms|Members with a permission","admins|Admins","mods|Moderators","inrole|Members who have a role","hypesquad|Members by HypeSquad house","pending|Members who have not passed membership screening","invoice|Members in a voice channel","activedeveloper|Members with the Active Developer badge","joinedate|Members sorted by join date","early|Members with the Early Supporter badge","createdat|Members sorted by account age","bughunters|Members with a Bug Hunter badge"]]
+ ["list","","Quick lists of things in your server, like roles, bans or members with a badge.","list roles",["roles|All roles","users|All users","bots|All bots","bans|Banned users","boosters|Server boosters","emojis|All emojis","channels|All channels","timeouts|Members in timeout","hasperms|Members with a permission","admins|Admins","mods|Moderators","inrole|Members who have a role","hypesquad|Members by HypeSquad house","pending|Members who have not passed membership screening","invoice|Members in a voice channel","activedeveloper|Members with the Active Developer badge","joinedate|Members sorted by join date","early|Members with the Early Supporter badge","createdat|Members sorted by account age","bughunters|Members with a Bug Hunter badge"]]
 ]};
 const COMMANDS=[];
 for(const c of CATS)for(const r of RAW[c.id]){
@@ -1418,7 +1615,7 @@ const TAGSEARCH={so:"server owner",prem:"premium",slash:"slash",sopart:"server o
 /* ===== State ===== */
 const S={servers:null,users:null,commands:null,shards:null,ping:null,uptime0:null,uptimeAt:0,startMs:null,history:[],mode:"loading",updated:0,paused:false,frozenAt:0,pct:null,svc:null,shardPings:null,blind:[]};
 const PAGE=matchMedia("(max-width:640px)").matches?12:24;
-let prefix=".",catSel="all",query="",limit=PAGE,RANGE=30,tagSel="";
+let prefix=".",catSel="all",query="",limit=PAGE,RANGE=720,tagSel="";
 
 /* ===== Tiny helpers ===== */
 function fmtUptime(s){s=Math.max(0,Math.floor(s));const d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),x=s%60;return(d?d+"d ":"")+pad(h)+"h "+pad(m)+"m "+pad(x)+"s"}
@@ -1440,7 +1637,7 @@ function anchorStart(){
 }
 function trimHistory(){
   if(S.startMs!=null)S.history=S.history.filter(x=>x.t>=S.startMs);
-  S.history=S.history.slice(-3700);
+  S.history=S.history.slice(-4500);
 }
 
 /* ===== Stats ===== */
@@ -1471,7 +1668,8 @@ async function loadStats(){
     const pc=d.uptimePct||d.uptime_pct;S.pct=pc&&typeof pc==="object"?pc:null;
     S.svc=d.services&&typeof d.services==="object"?d.services:null;
     const sp=d.shardPings||d.shard_latency;S.shardPings=Array.isArray(sp)?sp.map((x,i)=>typeof x==="number"?{id:i,ping:x}:{id:x.id??i,ping:Number(x.ping??x.latency)}).filter(x=>isFinite(x.ping)):null;
-    if(Array.isArray(d.history)&&d.history.length){S.history=d.history.filter(x=>x&&typeof x.ping==="number").map(x=>({t:Number(x.t),ping:x.ping}))}
+    const skew=typeof d.now==="number"?Date.now()-d.now:0; /* fixes a wrong clock on the visitor's device */
+    if(Array.isArray(d.history)&&d.history.length){S.history=d.history.map(x=>Array.isArray(x)?{t:Number(x[0])+skew,ping:x[1]}:x&&{t:Number(x.t)+skew,ping:x.ping}).filter(x=>x&&typeof x.ping==="number"&&isFinite(x.t));const lt=S.history[S.history.length-1];if(typeof d.ping==="number"&&(!lt||Date.now()-lt.t>4000))S.history.push({t:Date.now(),ping:d.ping})}
     else if(typeof d.ping==="number"){S.history.push({t:Date.now(),ping:d.ping})}
     trimHistory();
     S.mode="live";S.updated=Date.now();render();return true;
@@ -1545,7 +1743,7 @@ function drawChart(){
   const t0=fromStart?S.startMs:wStart,t1=now,span=Math.max(1,t1-t0);
   const X=t=>L+(t-t0)/span*iw,Y=v=>T+ih-(v/yMax)*ih;
   // break the line wherever samples are missing. Red band = bot unreachable. No band = this tab was in the background.
-  const GAP=Math.max(20000,CONFIG.POLL_MS*4),runs=[],bands=[];let cur=[];
+  const GAP=Math.max(60000,CONFIG.POLL_MS*8),runs=[],bands=[];let cur=[];
   for(const p of pts){const q=cur[cur.length-1];if(q&&p.t-q.t>GAP){runs.push(cur);cur=[];if(!blind(q.t,p.t))bands.push([q.t,p.t])}cur.push(p)}
   runs.push(cur);
   const tail=pts[pts.length-1];
@@ -1873,6 +2071,118 @@ setInterval(()=>{
 },1000);
 /* animations only run while their section is on screen */
 if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>es.forEach(en=>en.target.classList.toggle("paused-fx",!en.isIntersecting)),{rootMargin:"120px"});document.querySelectorAll(".hero,.marq,.pcard,.dev,.support").forEach(n=>io.observe(n))}
+})();
+</script>
+<script>
+(()=>{"use strict";
+const $=(s,r=document)=>r.querySelector(s);
+/* Cast: real Discord accounts, looked up live through Lanyard. Fallback names are used until/unless the lookup works. */
+const CAST={
+ o:{id:"1530686788824469646",name:"Owner",tag:"OWNER",cls:"o",c:"#6366f1"},
+ l:{id:"1546289969960587270",name:"Luci",tag:"CO-OWNER",cls:"l",c:"#a855f7"},
+ a:{id:"1556911422091427910",name:"Member",c:"#ec4899"},
+ b:{id:"1435619294229561434",name:"Member",c:"#f59e0b"},
+ c:{id:"1147462845315952690",name:"Member",c:"#0ea5e9"}
+};
+const CK=Object.keys(CAST);
+CK.forEach(k=>Object.assign(CAST[k],{img:"",st:"offline"}));
+const U={Skyline:["#0ea5e9","S"]};
+const esc2=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const sub=t=>String(t).replace(/\{(o|l|a|b|c)\}/g,(_,k)=>'<span data-un="'+k+'">'+esc2(CAST[k].name)+'</span>');
+const avHTML=(k,cls)=>{const u=CAST[k],img=u.img?' img" style="background-image:url(\''+u.img+'\');background-color:'+u.c:'" style="background:'+u.c;return'<span class="av'+(cls?" "+cls:"")+img+'" data-av="'+k+'">'+(u.img?"":esc2(u.name[0]||"?").toUpperCase())+'</span>'};
+function paint(){
+  document.querySelectorAll("[data-un]").forEach(n=>n.textContent=CAST[n.dataset.un].name);
+  document.querySelectorAll("[data-av]").forEach(n=>{const u=CAST[n.dataset.av];if(u.img){n.style.backgroundImage='url("'+u.img+'")';n.classList.add("img");n.textContent=""}else n.textContent=(u.name[0]||"?").toUpperCase()});
+  memList();
+}
+function memList(){
+  const el=document.getElementById("dmMem");if(!el)return;
+  const on=CK.filter(k=>CAST[k].st!=="offline"),off=CK.filter(k=>CAST[k].st==="offline");
+  const row=(k,o)=>'<div class="dm-u'+(o?" off":"")+'">'+avHTML(k)+'<i class="st" data-s="'+CAST[k].st+'"></i><span class="nm">'+esc2(CAST[k].name)+'</span>'+(CAST[k].tag?'<em>'+CAST[k].tag+'</em>':"")+'</div>';
+  const bot='<div class="dm-u"><span class="av hb"></span><span class="nm">Homura</span><em>APP</em></div>';
+  el.innerHTML='<h6>ONLINE, '+(on.length+1)+'</h6>'+on.map(k=>row(k)).join("")+bot+(off.length?'<h6 class="g">OFFLINE, '+off.length+'</h6>'+off.map(k=>row(k,1)).join(""):"");
+  el.querySelectorAll(".dm-u .av:not(.hb)").forEach((n,i)=>{});
+}
+async function lookup(k){
+  try{
+    const r=await fetch("https://api.lanyard.rest/v1/users/"+CAST[k].id,{cache:"no-store"});const j=await r.json();
+    if(j&&j.success){
+      const d=j.data.discord_user||{},u=CAST[k];
+      u.name=d.display_name||d.global_name||d.username||u.name;
+      if(d.avatar)u.img="https://cdn.discordapp.com/avatars/"+d.id+"/"+d.avatar+(d.avatar.startsWith("a_")?".gif":".png")+"?size=128";
+      u.st=j.data.discord_status||"offline";
+    }
+  }catch(e){}
+}
+async function lookupAll(){await Promise.all(CK.map(lookup));paint()}
+const E=(c,t,f,ch,x)=>({k:"e",c,t,f,ch,x});
+const M=(w,t)=>({k:"m",w,t});
+const ALERT=["Attack","Detected","Punished","Restored"];
+const S={
+ antinuke:{label:"Antinuke",ch:"homura-logs",seed:[M("o","night shift. ping me if anything breaks"),M("l","o7"),M("a","nothing ever happens here tbh")],acts:[
+  ["Delete a channel",[E("#f59e0b","⚠ Unauthorized channel delete",[["Executor","@Spam Bot"],["Channel","general"],["Action","Banned, restoring"]],ALERT),E("#34d399","✓ Channel restored",[["Result","#general is back where it was. Nobody had to lift a finger."]]),M("a","wait it's already back??"),M("o","that's why antinuke stays on")]],
+  ["Delete a role",[E("#f59e0b","⚠ Unauthorized role delete",[["Executor","@Spam Bot"],["Role","Moderator"],["Action","Banned, restoring"]],ALERT),E("#34d399","✓ Role restored",[["Result","@Moderator is back with its permissions and members."]])]],
+  ["Mass ban",[E("#ef4444","⚠ Mass ban blocked",[["Executor","@Rogue Admin"],["Bans","6 in 4 seconds (limit 3)"],["Action","Permissions removed"]],ALERT),E("#34d399","✓ Bans reverted",[["Result","All 6 members were unbanned. Setup: run <i>antinuke setup</i>."]])]]]},
+ antiraid:{label:"Antiraid",ch:"homura-logs",seed:[M("o","quiet night, going afk"),M("a","same")],acts:[
+  ["Simulate a raid",[M("b","new account joined"),M("c","another one"),E("#ef4444","🚨 Raid detected",[["Joins","14 new accounts in 8 seconds"],["Action","Server locked, 14 accounts kicked"]],["Joined","Detected","Locked","Cleaned"]),E("#34d399","✓ Raid contained",[["Result","Members were never pinged. Run <i>antiraid unpanic</i> to reopen."]])]],
+  ["Run panic mode",[M("o",".antiraid panic"),E("#ef4444","🔒 Panic mode on",[["Locked","All channels"],["New joins","Held until you turn it off"]]),M("o",".antiraid unpanic"),E("#34d399","✓ Server reopened",[["Result","Channels are open again."]])]]]},
+ automod:{label:"Automod",ch:"general",seed:[M("l","anyone up for a game later?"),M("a","yeah give me 10 min")],acts:[
+  ["Post an invite link",[M("b","join my server discord.gg/free-stuff"),E("#f59e0b","🛡 Message removed",[["Member","@{b}"],["Rule","Invite links"],["Action","Deleted and warned"]])]],
+  ["Spam messages",[M("b","hello"),M("b","hello"),M("b","hello hello hello"),E("#f59e0b","🛡 Spam stopped",[["Member","@{b}"],["Rule","Spam"],["Action","Muted for 10 minutes"]])]],
+  ["Mass mention",[M("c","@everyone @{o} @{a} @{l} wake up"),E("#f59e0b","🛡 Mass mention blocked",[["Member","@{c}"],["Rule","Mass mentions (limit 4)"],["Action","Deleted and warned"]])]]]},
+ linkscan:{label:"LinkScan",ch:"general",seed:[M("a","anyone seen the new update?"),M("l","not yet")],acts:[
+  ["Send a phishing link",[M("c","free nitro for everyone https://disc0rd-gift.xyz"),E("#ef4444","🛡 Dangerous link blocked",[["Member","@{c}"],["Threat","Phishing site"],["Action","Deleted and timed out"]]),M("a","good catch")]],
+  ["Send a bad image",[M("b","check this out (image.png)"),E("#ef4444","🛡 Token-grabbing image blocked",[["Member","@{b}"],["Threat","Image that steals logins"],["Action","Deleted"]])]]]},
+ music:{label:"Music",ch:"music",seed:[M("o","vc is open, queue something"),M("a","on it")],acts:[
+  ["Play a song",[M("a",".play midnight drive"),E("#8b5cf6","▶ Now playing",[["Track","Midnight Drive"],["Requested by","@{a}"]],null,{bar:1,btns:["Pause","Skip","Loop"]})]],
+  ["Show the queue",[M("o",".queue"),E("#8b5cf6","Queue",[["Up next","1. Neon Rain 2. Late Train 3. Slow Orbit"],["Length","3 songs, 11:42"]])]],
+  ["Skip",[M("l",".skip"),E("#8b5cf6","⏭ Skipped",[["Now playing","Neon Rain"]],null,{bar:1})]]]},
+ affiliate:{label:"Partnerships",ch:"partnerships",seed:[M("o","partners, open a ticket below to get started")],acts:[
+  ["Partner opens a ticket",[E("#8b5cf6","🎫 Ticket opened",[["Channel","partner-skyline"],["Who can see it","Skyline, staff and Homura"]]),M("Skyline","<code>.affiliate create</code> Skyline, a chill gaming community. discord.gg/skyline"),E("#34d399","✓ Ad saved",[["Your code","<i>K7F2</i>"],["Next","Wait for staff to claim your ticket"]])]],
+  ["Staff posts the ad",[M("o","Claimed. <code>.ad post K7F2 2</code>"),E("#34d399","✓ Ad posted",[["Channel","#partnerships"],["Times","2"],["Leaderboard","+1 point for {o}"]])]]]}
+};
+const tabs=$("#pvTabs"),act=$("#dmAct"),feed=$("#dmFeed");if(!tabs||!feed)return;
+let cur="",run=0;
+const tm=()=>"Today at "+new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"});
+const msg=(x,fresh)=>{
+  const d=document.createElement("div");d.className="m";if(!fresh)d.style.animation="none";
+  if(x.k==="m"){
+    const known=CAST[x.w],u=known||{name:x.w,c:U[x.w]?U[x.w][0]:"#6366f1"};
+    const av=known?avHTML(x.w):'<span class="av" style="background:'+u.c+'">'+esc2(u.name[0])+'</span>';
+    const nm=known?'<span class="nm" data-un="'+x.w+'">'+esc2(u.name)+'</span>':'<span class="nm">'+esc2(u.name)+'</span>';
+    d.innerHTML=av+'<div><div class="m-n '+(known&&known.cls||"")+'">'+nm+(known&&known.tag?' <em class="'+(known.cls==="o"?"ow":"co")+'">'+known.tag+'</em>':"")+'<time>'+tm()+'</time></div><p>'+sub(x.t)+'</p></div>';
+  }else{
+    const f=x.f.map(a=>'<div><dt>'+a[0]+':</dt><dd>'+sub(a[1])+'</dd></div>').join("");
+    const ch=x.ch?'<div class="ch">'+x.ch.map(c=>'<span>'+c+'</span>').join("")+'</div>':"";
+    const bar=x.x&&x.x.bar?'<div class="bar"><i></i></div>':"";
+    const bt=x.x&&x.x.btns?'<div class="btns">'+x.x.btns.map(b=>'<span>'+b+'</span>').join("")+'</div>':"";
+    d.innerHTML='<span class="av hb"></span><div><div class="m-n">Homura <em>APP</em><time>'+tm()+'</time></div><div class="emb" style="--c:'+x.c+'"><h5>'+sub(x.t)+'</h5><dl>'+f+'</dl>'+bar+ch+bt+'</div></div>';
+    const i=d.querySelector(".bar i");if(i)setTimeout(()=>i.style.width="68%",60);
+  }
+  feed.appendChild(d);feed.scrollTo({top:feed.scrollHeight,behavior:fresh?"smooth":"auto"});
+};
+const typ=$("#dmTyp"),typOn=t=>{if(typ)typ.innerHTML=t?'<span><i></i><i></i><i></i></span> '+t:""};
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+function show(id){
+  const s=S[id];if(!s)return;cur=id;run++;typOn("");feed.innerHTML="";
+  s.seed.forEach(x=>msg(x,false));
+  $("#dmCh").textContent=$("#dmCh2").textContent=s.ch;
+  document.querySelectorAll(".dm-ch").forEach(c=>c.classList.toggle("on",c.dataset.ch===s.ch));
+  tabs.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.id===id));
+  act.innerHTML="";
+  s.acts.forEach((a,i)=>{const b=document.createElement("button");b.type="button";b.textContent=a[0];b.addEventListener("click",()=>play(i));act.appendChild(b)});
+}
+async function play(i){
+  const my=++run,steps=S[cur].acts[i][1];
+  act.querySelectorAll("button").forEach(b=>b.disabled=true);
+  for(const x of steps){const who=x.k==="m"?(CAST[x.w]?CAST[x.w].name:x.w):"Homura";typOn(who+" is typing...");await sleep(x.k==="m"?700:1050);if(my!==run)return;typOn("");msg(x,true);await sleep(120)}
+  act.querySelectorAll("button").forEach(b=>b.disabled=false);
+}
+Object.keys(S).forEach(id=>{const b=document.createElement("button");b.type="button";b.className="chip";b.dataset.id=id;b.setAttribute("aria-pressed","false");b.textContent=S[id].label;b.addEventListener("click",()=>show(id));tabs.appendChild(b)});
+document.querySelectorAll("[data-pv]").forEach(a=>a.addEventListener("click",()=>show(a.dataset.pv)));
+memList();lookupAll();setInterval(()=>{if(!document.hidden)lookupAll()},45000);
+show("antinuke");
+if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>{if(es[0].isIntersecting){io.disconnect();if(!document.documentElement.classList.contains("fx-off"))play(0)}},{threshold:.45});io.observe($("#dm"))}
 })();
 </script>
 </body>
